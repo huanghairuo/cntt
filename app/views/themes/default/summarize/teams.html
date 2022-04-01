@@ -1,0 +1,166 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<style>
+    
+
+    .timeline_content_left {
+        font-size: 16px;
+        color: #111;
+    }
+
+    .timeline_left {
+        text-align: right;
+        padding-right: 17%;
+    }
+
+
+    .timeline_right {
+        text-align: left;
+        padding-left: 17%
+    }
+
+    .honor_content:hover {
+        background-color: #4876FF;
+        color: #fff;
+    }
+</style>
+<!-- Start 中心概况 -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="background-image: url(@{'/public/images/central/zhongxin.jpg'});height: 400px">
+    <!-- <div class="container u-bg-overlay__inner text-center g-pt-120 g-pb-70">
+        <div class="g-mb-100">
+            <h1
+                    class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">
+                中心概况</h1>
+            <span
+                    class="d-block lead g-color-white banner-text">中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是科技部认定的首批国家技术转移示范机构。北京中心在业务上接受中科院北京分院的直接领导，是中国科学院开展科技成果转化、技术转移工作的重要平台.</span>
+        </div>
+    </div> -->
+</section>
+<!-- End 中心概况 -->
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-10">
+    	<div class="row">
+        	<div class="col-3">
+        	<article class="u-shadow-v21 u-shadow-v21--hover g-bg-white text-center g-overflow-hidden g-rounded-4 g-pos-rel g-z-index-2 g-cursor-pointer g-transition-0_3"  style="max-width: 230px; margin-top: -95px;">
+	              <!-- Article Header -->
+	              <header class="g-bg-blue-lineargradient-v2 g-pos-rel g-px-20 g-py-35">
+	                <strong class="d-block g-color-white g-font-size-24 g-line-height-0_7">
+                        关于我们
+	                </strong>
+	              </header>
+	              <!-- End Article Header -->
+	
+	              <!-- Article Content -->
+	              <div class="g-pt-0">
+                <!-- Nav tabs -->
+                <ul class="nav flex-column u-nav-v2-1  menu_tob left_tob" role="tablist"
+                    data-target="nav-2-1-primary-ver" data-tabs-mobile-type="slide-up-down"
+                    data-btn-classes="btn btn-md btn-block u-btn-outline-primary g-mb-20">
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none g-font-size-16" href="@{Application.summarize('summarize')}" role="tab">公司简介</a>
+                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link g-py-10 g-brd-none g-font-size-16 active" href="@{Application.summarize('teams')}" role="tab">现任领导</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link g-py-10 g-brd-none g-font-size-16 " href="@{Application.summarize('organization')}" role="tab">组织架构</a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none g-font-size-16 " href="@{Application.summarize('honor')}" role="tab">荣誉资质</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none g-font-size-16" href="@{Application.summarize('roadmap')}" role="tab">历史沿革</a>
+                    </li>
+                </ul>
+                <!-- End Nav tabs -->
+                </div>
+                </article>
+            </div>
+
+		<div class="col-9">
+        <!-- Tab panes -->
+                <section class="container g-pb-70 g-pt-20">
+                    <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>现任领导</span>
+				            </li>
+				        </ul>
+                    <div class="text-left g-mb-50">
+                        <h2 class="h4 g-color-primary">现任领导</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-10 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/hsy.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">黄韶勇</strong>
+                                    <span>主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5">黄韶勇，现任中国科学院北京国家技术转移中心主任，负责中心及公司工作整体协调，监督参控股公司发展。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12 g-mb-30">
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-10 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/zn.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">赵 楠</strong>
+                                    <span>常务副主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5">赵楠，现任中国科学院北京国家技术转移中心常务副主任，负责中心日常运营及管理工作。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 g-mb-30">
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-10 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/ccn.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">崔常男</strong>
+                                    <span>副主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5"
+                                   title="崔常男，现任中国科学院北京国家技术转移中心副主任，分管市场化工作。民进中央专委会委员、民进北京市委青年专委会主任、民进海淀区委委员、民进海淀区委青年专委会主任。第十届海淀区政协委员、第八届海淀区青联常委。">
+                                    崔常男，现任中国科学院北京国家技术转移中心副主任，分管市场化工作。民进中央专委会委员、民进北京市委青年专委会主任、民进海淀区委委员、民进海淀区委青年专委会主任。第十届海淀区政协委员、第八届海淀区青联常委。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 g-mb-30">
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-10 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/yzf.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">姚作芳</strong>
+                                    <span>副主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5">姚作芳，现任中国科学院北京国家技术转移中心副主任，负责中心综合行政管理等工作。</p>
+                            </div>
+                            </div>
+                            </div>
+                </section>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->
+
+

@@ -1,0 +1,8 @@
+#{field 'object.' + _name}
+    <label class="g-mb-10" for="${field.id}">
+        &{_name}
+    </label>
+    <div class="g-pos-rel #{ifError field.name}u-has-error-v3#{/ifError}">
+	    <input id="${field.id}" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-10  #{ifError field.name}g-brd-pink-v2--error #{/ifError}" type="text" name="${field.name}" value="${params[field.name]?.escape()?.raw() ?: field.error?.message == 'validation.required' ? '' : _value?.escape()?.raw()}" size="50" />
+    </div>
+#{/field}

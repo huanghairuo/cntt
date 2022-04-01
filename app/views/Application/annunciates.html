@@ -1,0 +1,37 @@
+#{extends 'main1.html' /}
+#{set title:'Home' /}
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-100">
+        <div class="g-font-size-16 g-font-weight-700">通知公告</div>
+        <div style="margin-top: 20px;" class="list_new">
+            <ul class="list-unstyled g-mb-60">
+                #{list items: notices, as:'notice' }
+            
+                <!-- Events Item -->
+                <li class="u-block-hover u-shadow-v11 u-shadow-v37--hover g-bg-secondary-dark-v1 g-color-white--hover g-bg-primary--hover rounded g-px-10 g-py-20 mb-4">
+                    <div class="row align-items-lg-center">
+                        <div class="col-md-3 col-lg-2 g-mb-30 g-mb-0--lg text-center">
+                            <div class="align-items-center mb-3">
+                                <span class="g-font-weight-700 g-font-size-50 g-line-height-1 mr-3">${notice?.update_at.format('MM')}</span>
+                            </div>
+                            <span class="d-block g-color-text-light-v1">${notice?.update_at.format('yyyy-MM-dd')}</span>
+                        </div>
+                        <div class="col-md-9 col-lg-8 g-mb-30 g-mb-0--lg">
+                            <h3 class="h5 g-font-primary g-font-weight-500 mb-1">${notice?.title}</h3>
+                            <p>${notice.description.raw().toString().replaceAll("<[.[^<]]*>", "").replace(/&nbsp;/, "").substring(0,100)+"..."}</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <a class="btn btn-block g-brd-2 g-brd-main-opacity-0_1 g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-rounded-30 g-py-10" href="@{article(notice.id)}" target="_blank">详情</a>
+                        </div>
+                    </div>
+                    <a class="u-link-v2" href="@{article(notice.id)}" target="_blank"></a>
+                </li>
+                <!-- End Events Item -->
+                #{/list}
+            </ul>
+            
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->

@@ -1,0 +1,68 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-100">
+        <div class="lanmu">${category?.name}</div>
+        <div style="margin-top: 20px;" class="list_new">
+            
+
+            <!-- More Events List -->
+            <ul class="list-unstyled">
+            	#{list items: articles, as:'article' }
+                <!-- Events Item -->
+                <li class="u-block-hover u-shadow-v11 u-shadow-v37--hover g-bg-secondary-dark-v1 g-color-white--hover g-bg-primary--hover rounded g-px-10 g-py-30 mb-4">
+                    <div class="row align-items-lg-center">
+                        <div class="col-md-3 col-lg-3 g-mb-30 g-mb-0--lg">
+                            <div class="d-flex align-items-center mb-3">
+                            	<img src="${article.description.firstImage()==""?'/public/images/img/img14.jpg':article.description.firstImage()}" class="w-100"/>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-9 col-lg-9 g-mb-30 g-mb-0--lg">
+                            <h3 class="h5 g-font-primary g-font-weight-500 mb-1">${article?.title}</h3>
+                            <p><span class="d-block g-color-text-light-v1">${article?.update_at.format('yyyy-MM-dd')}</span></p>
+                            <p>${article.description.raw().toString().replaceAll("<[.[^<]]*>", "").replace(/&nbsp;/, "").substring(0,100)+"..."}</p>
+                        </div>
+                    </div>
+                    <a class="u-link-v2" href="@{article(article.id)}" target="_blank"></a>
+                </li>
+                <!-- End Events Item -->
+                #{/list}
+            </ul>
+            <!-- End More Events List -->
+            
+        </div>
+        <nav id="stickyblock-end-1" aria-label="Page Navigation">
+                <ul class="list-inline text-center mb-0">
+                	#{if page>1}
+                	<li class="list-inline-item">
+                    <a class="u-pagination-v1__item g-brd-secondary-light-v2 g-brd-primary--hover g-color-gray-dark-v5 g-color-primary--hover g-font-size-12 rounded g-px-15 g-py-5 g-ml-15" href="@{Application.newsList(page-1)}" aria-label="Next">
+                      <span aria-hidden="true">
+                      	<i class="ml-2 fa fa-angle-left"></i>
+                        前一页
+                      </span>
+                      <span class="sr-only">前一页</span>
+                    </a>
+                  </li>
+                  #{/if}
+                  <li class="list-inline-item">
+                    <a class="active u-pagination-v1__item g-width-30 g-height-30 g-brd-secondary-light-v2 g-brd-primary--active g-color-white g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#">${page}</a>
+                  </li>
+                  #{if page<(total/10)}
+                  <li class="list-inline-item">
+                    <a class="u-pagination-v1__item g-brd-secondary-light-v2 g-brd-primary--hover g-color-gray-dark-v5 g-color-primary--hover g-font-size-12 rounded g-px-15 g-py-5 g-ml-15" href="@{Application.newsList(page+1)}" aria-label="Next">
+                      <span aria-hidden="true">
+                        后一页
+                        <i class="ml-2 fa fa-angle-right"></i>
+                      </span>
+                      <span class="sr-only">后一页</span>
+                    </a>
+                  </li>
+                  #{/if}
+                </ul>
+         </nav>
+    </div>
+</section>
+<!-- End 内容 -->
+

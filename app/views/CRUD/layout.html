@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+<head>
+	<title>#{get 'title' /}</title>
+	<!-- Required Meta Tags Always Come First -->
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="@{'/public/images/favicon.png'}">
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/bootstrap/bootstrap.min.css'}">
+	<!-- CSS Global Icons -->
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/icon-awesome/css/font-awesome.min.css'}">
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/icon-line/css/simple-line-icons.css'}">
+	<link rel="stylesheet" href="@{'/public/images/vendor/icon-etlinefont/style.css'}">
+	<link rel="stylesheet" href="@{'/public/images/vendor/icon-line-pro/style.css'}">
+	<link rel="stylesheet" href="@{'/public/images/vendor/icon-hs/style.css'}">
+	
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/hs-admin-icons/hs-admin-icons.css'}">
+	
+	<link rel="stylesheet" href="@{'/public/images/vendor/animate.css'}">
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css'}">
+	
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/flatpickr/dist/css/flatpickr.min.css'}">
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/bootstrap-select/css/bootstrap-select.min.css'}">
+	
+	<link rel="stylesheet" href="@{'/public/images/vendor/chartist-js/chartist.min.css'}">
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/chartist-js-tooltip/chartist-plugin-tooltip.css'}">
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/fancybox/jquery.fancybox.min.css'}">
+	
+	<link rel="stylesheet"
+		href="@{'/public/images/vendor/hamburgers/hamburgers.min.css'}">
+		<link rel="stylesheet" href="@{'/public/images/vendor/summernote-themes/unify-lite.css'}">
+	
+	<!-- CSS Unify -->
+	<link rel="stylesheet" href="@{'/public/images/css/unify-admin.css'}">
+	
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="@{'/public/images/css/custom.css'}">
+</head>
+<body>
+<!-- Header -->
+  <header id="js-header" class="u-header u-header--sticky-top">
+    <div class="u-header__section u-header__section--admin-blue g-min-height-65">
+      <nav class="navbar no-gutters g-pa-0">
+        <div class="col-auto d-flex flex-nowrap u-header-logo-toggler g-py-12">
+          <!-- Logo -->
+          <a href="/admin/" class="navbar-brand d-flex align-self-center g-hidden-xs-down g-line-height-1 py-0 g-mt-5">
+            北京国家技术转移中心
+          </a>
+          <!-- End Logo -->
+
+          <!-- Sidebar Toggler -->
+          <a class="js-side-nav u-header__nav-toggler d-flex align-self-center ml-auto" href="#" data-hssm-class="u-side-nav--mini u-sidebar-navigation-v1--mini" data-hssm-body-class="u-side-nav-mini" data-hssm-is-close-all-except-this="true" data-hssm-target="#sideNav">
+            <i class="hs-admin-align-left"></i>
+          </a>
+          <!-- End Sidebar Toggler -->
+        </div>
+
+  
+
+          <!-- Top User -->
+          <div class="col-auto d-flex g-pt-5 g-pt-0--sm g-pl-10 g-pl-20--sm">
+            <div class="g-pos-rel g-px-10--lg">
+              <a id="profileMenuInvoker" class="d-block" href="#" aria-controls="profileMenu" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#profileMenu" data-dropdown-type="css-animation" data-dropdown-duration="300"
+              data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
+                <span class="g-pos-rel">
+        <span class="u-badge-v2--xs u-badge--top-right g-hidden-sm-up g-bg-secondary g-mr-5"></span>
+                <img class="g-width-30 g-width-40--md g-height-30 g-height-40--md rounded-circle g-mr-10--sm" src="@{'/public/images/img-temp/150x150/img1.jpg'}" alt="Image description">
+                </span>
+                <span class="g-pos-rel g-top-2">
+        <span class="g-hidden-sm-down"><!-- Charlie Bailey --></span>
+                <i class="hs-admin-angle-down g-pos-rel g-top-2 g-ml-10"></i>
+                </span>
+              </a>
+
+              <!-- Top User Menu -->
+              <ul id="profileMenu" class="g-pos-abs g-left-0 g-width-100x--lg g-nowrap g-font-size-14 g-py-20 g-mt-17 rounded" aria-labelledby="profileMenuInvoker">
+                
+                <!-- <li class="g-mb-10">
+                  <a class="media g-color-primary--hover g-py-5 g-px-20" href="#">
+                    <span class="d-flex align-self-center g-mr-12">
+          <i class="hs-admin-user"></i>
+        </span>
+                    <span class="media-body align-self-center">My Profile</span>
+                  </a>
+                </li> -->
+                <li class="mb-0">
+                  <a class="media g-color-primary--hover g-py-5 g-px-20" href="@{Secure.logout()}">
+                    <span class="d-flex align-self-center g-mr-12">
+          <i class="hs-admin-shift-right"></i>
+        </span>
+                    <span class="media-body align-self-center">登出</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Top User Menu -->
+            </div>
+          </div>
+          <!-- End Top User -->
+
+      </nav>
+
+
+    </div>
+  </header>
+  <!-- End Header -->
+  <main class="container-fluid px-0 g-pt-65">
+    <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
+      <!-- Sidebar Nav -->
+      <div id="sideNav" class="col-auto u-sidebar-navigation-v1 u-sidebar-navigation--blue">
+        <ul id="sideNavMenu" class="u-sidebar-navigation-v1-menu u-side-nav--top-level-menu g-min-height-100vh mb-0">
+          
+          <!-- Dashboards -->
+          <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened has-active">
+            <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu1">
+              <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+      <i class="hs-admin-view-list-alt"></i>
+    </span>
+              <span class="media-body align-self-center">文章管理</span>
+              <span class="d-flex align-self-center u-side-nav--control-icon">
+      <i class="hs-admin-angle-right"></i>
+    </span>
+              <span class="u-side-nav--has-sub-menu__indicator"></span>
+            </a>
+
+            <!-- Dashboards: Submenu-1 -->
+            <ul id="subMenu1" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: block;">
+              <!-- Dashboards v1 -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Articles.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-menu-alt"></i>
+        </span>
+                  <span class="media-body align-self-center">文章管理</span>
+                </a>
+              </li>
+              <!-- End Dashboards v1 -->
+
+              <!-- Dashboards v2 -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Categories.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-blackboard"></i>
+        </span>
+                  <span class="media-body align-self-center">文章分类管理</span>
+                </a>
+              </li>
+              <!-- End Dashboards v2 -->
+
+            </ul>
+            <!-- End Dashboards: Submenu-1 -->
+          </li>
+          <!-- End Dashboards -->
+
+          <!-- Layouts Settings -->
+          <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+            <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu2">
+              <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+      <i class="hs-admin-layout-grid-3"></i>
+    </span>
+              <span class="media-body align-self-center">页面管理</span>
+              <span class="d-flex align-self-center u-side-nav--control-icon">
+      <i class="hs-admin-angle-right"></i>
+    </span>
+              <span class="u-side-nav--has-sub-menu__indicator"></span>
+            </a>
+
+            <!-- Layouts Settings: Submenu-1 -->
+            <ul id="subMenu2" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: block;">
+              <!-- Fixed Header & Sidebar -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Pages.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-accordion-list"></i>
+        </span>
+                  <span class="media-body align-self-center">页面管理</span>
+                </a>
+              </li>
+              <!-- End Fixed Header & Sidebar -->
+
+              <!-- Fixed Header & Static Sidebar -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{PageCategories.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-blackboard"></i>
+        </span>
+                  <span class="media-body align-self-center">页面分类管理</span>
+                </a>
+              </li>
+              <!-- End Fixed Header & Static Sidebar -->
+
+            </ul>
+            <!-- End Layouts Settings: Submenu-1 -->
+          </li>
+          <!-- End Layouts Settings -->
+
+
+          <!-- Tables -->
+          <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened">
+            <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu8">
+              <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+      <i class="hs-admin-settings"></i>
+    </span>
+              <span class="media-body align-self-center">系统设置</span>
+              <span class="d-flex align-self-center u-side-nav--control-icon">
+      <i class="hs-admin-angle-right"></i>
+    </span>
+
+              <span class="u-side-nav--has-sub-menu__indicator"></span>
+            </a>
+
+            <!-- Tables: Submenu-1 -->
+            <ul id="subMenu8" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: block;">
+               <!-- Basic Tables -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Menus.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-media-center"></i>
+        </span>
+                  <span class="media-body align-self-center">菜单管理</span>
+                </a>
+              </li>
+              <!-- End Basic Tables -->
+              
+              <!-- Basic Tables -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Users.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-user"></i>
+        </span>
+                  <span class="media-body align-self-center">用户管理</span>
+                </a>
+              </li>
+              <!-- End Basic Tables -->
+
+              <!-- Table Designs -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Roles.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-media-overlay-alt-2"></i>
+        </span>
+                  <span class="media-body align-self-center">角色管理</span>
+                </a>
+              </li>
+              <!-- End Table Designs -->
+
+              <!-- Table Modern -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="@{Settings.list()}">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-settings"></i>
+        </span>
+                  <span class="media-body align-self-center">系统设置</span>
+                </a>
+              </li>
+              <!-- End Table Modern -->
+            </ul>
+            <!-- End Tables: Submenu-1 -->
+          </li>
+          <!-- End Tables -->
+
+
+        </ul>
+      </div>
+      <!-- End Sidebar Nav -->
+
+
+      <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+        #{doLayout /}
+
+        <!-- Footer -->
+        <footer id="footer" class="u-footer--bottom-sticky g-bg-white g-color-gray-dark-v6 g-brd-top g-brd-gray-light-v7 g-pa-20">
+          <div class="row align-items-center">
+            <!-- Footer Nav -->
+            <div class="col-md-4 g-mb-10 g-mb-0--md">
+              <!-- <ul class="list-inline text-center text-md-left mb-0">
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-secondary--hover" href="#">FAQ</a>
+                </li>
+                <li class="list-inline-item">
+                  <span class="g-color-gray-dark-v6">|</span>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-secondary--hover" href="#">Support</a>
+                </li>
+                <li class="list-inline-item">
+                  <span class="g-color-gray-dark-v6">|</span>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-gray-dark-v6 g-color-secondary--hover" href="#">Contact Us</a>
+                </li>
+              </ul> -->
+            </div>
+            <!-- End Footer Nav -->
+
+            <!-- Footer Socials -->
+            <div class="col-md-4 g-mb-10 g-mb-0--md">
+              <!-- <ul class="list-inline g-font-size-16 text-center mb-0">
+                <li class="list-inline-item g-mx-10">
+                  <a href="#" class="g-color-facebook g-color-secondary--hover">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#" class="g-color-google-plus g-color-secondary--hover">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#" class="g-color-black g-color-secondary--hover">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10">
+                  <a href="#" class="g-color-twitter g-color-secondary--hover">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+              </ul> -->
+            </div>
+            <!-- End Footer Socials -->
+
+            <!-- Footer Copyrights -->
+            <div class="col-md-4 text-center text-md-right">
+              <small class="d-block g-font-size-default">&copy; 2020 LeXiang12 Inc. All Rights Reserved.</small>
+            </div>
+            <!-- End Footer Copyrights -->
+          </div>
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </main>
+
+	<!-- <div id="crudHeader">
+		<h1>
+			<a href="@{CRUD.index()}">&{'crud.title'}</a>
+		</h1>
+	</div> -->
+
+	<!-- #{if request.actionMethod != 'index'}
+	<div id="crudBreadcrumb">#{crud.navigation /}</div>
+	#{/if}  -->
+	#{if flash.success}
+	<div class="crudFlash flashSuccess">${flash.success}</div>
+	#{/if} #{if flash.error || error}
+	<div class="crudFlash flashError">${error ?: flash.error}</div>
+	#{/if}
+
+
+	<!-- JS Global Compulsory -->
+  <script src="@{'/public/images/vendor/jquery/jquery.min.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-migrate/jquery-migrate.min.js'}"></script>
+
+  <script src="@{'/public/images/vendor/popper.js/popper.min.js'}"></script>
+  <script src="@{'/public/images/vendor/bootstrap/bootstrap.min.js'}"></script>
+
+  <script src="@{'/public/images/vendor/cookiejs/jquery.cookie.js'}"></script>
+
+
+  <!-- jQuery UI Core -->
+  <script src="@{'/public/images/vendor/jquery-ui/ui/widget.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-ui/ui/version.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-ui/ui/keycode.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-ui/ui/position.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-ui/ui/unique-id.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-ui/ui/safe-active-element.js'}"></script>
+
+  <!-- jQuery UI Helpers -->
+  <script src="@{'/public/images/vendor/jquery-ui/ui/widgets/menu.js'}"></script>
+  <script src="@{'/public/images/vendor/jquery-ui/ui/widgets/mouse.js'}"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="@{'/public/images/vendor/jquery-ui/ui/widgets/datepicker.js'}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script src="@{'/public/images/vendor/appear.js'}"></script>
+  <script src="@{'/public/images/vendor/bootstrap-select/js/bootstrap-select.min.js'}"></script>
+  <script src="@{'/public/images/vendor/flatpickr/dist/js/flatpickr.min.js'}"></script>
+  <script src="@{'/public/images/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js'}"></script>
+  <script src="@{'/public/images/vendor/chartist-js/chartist.min.js'}"></script>
+  <script src="@{'/public/images/vendor/chartist-js-tooltip/chartist-plugin-tooltip.js'}"></script>
+  <script src="@{'/public/images/vendor/fancybox/jquery.fancybox.min.js'}"></script>
+  <script src="@{'/public/images/vendor/summernote/dist/summernote-bs4.min.js'}"></script>
+
+  <!-- JS Unify -->
+  <script src="@{'/public/images/js/hs.core.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.side-nav.js'}"></script>
+  <script src="@{'/public/images/js/helpers/hs.hamburgers.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.range-datepicker.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.datepicker.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.dropdown.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.scrollbar.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.area-chart.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.text-editor.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.bar-chart.js'}"></script>
+  <script src="@{'/public/images/js/helpers/hs.focus-state.js'}"></script>
+  <script src="@{'/public/images/js/components/hs.popup.js'}"></script>
+
+  <!-- JS Custom -->
+  <script src="@{'/public/images/js/custom.js'}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of custom select
+      $('.js-select').selectpicker();
+  
+      $.HSCore.components.HSTextEditor.init('.js-text-editor');
+      
+      // initialization of range datepicker
+      // $.HSCore.components.HSRangeDatepicker.init('#rangeDatepicker, #rangeDatepicker2, #rangeDatepicker3');
+  
+      // initialization of datepicker
+     
+      $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+  
+      // initialization of HSDropdown component
+     //  $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+  
+      // initialization of custom scrollbar
+      $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+  
+      // initialization of popups
+      /* $.HSCore.components.HSPopup.init('.js-fancybox', {
+        btnTpl: {
+          smallBtn: '<button data-fancybox-close class="btn g-pos-abs g-top-25 g-right-30 g-line-height-1 g-bg-transparent g-font-size-16 g-color-gray-light-v3 g-brd-none p-0" title=""><i class="hs-admin-close"></i></button>'
+        }
+      }); */
+    });
+  </script>
+  <script type="text/javascript">
+   var listCustomMenu = #{jsAction @AdminController.customMenu() /}
+   $.get(listCustomMenu(), function(data) {
+	   var html='';
+	   $.each(data, function(i, menu) {
+		   $('#sideNavMenu').prepend('<li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="'+menu.menu_url+'"><span class="d-flex align-self-center g-font-size-18 g-mr-18"><i class="'+menu.menu_icon+'"></i></span><span class="media-body align-self-center">'+menu.menu_name+'</span></a></li>');
+	   }); 
+	   
+	});
+  </script>
+  
+  #{get 'moreScripts' /}
+
+</body>
+</html>

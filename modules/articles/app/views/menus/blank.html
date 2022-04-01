@@ -1,0 +1,91 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.blank.title', type.modelName) /}
+
+<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+	<div class="g-pa-20">
+            <div class="media">
+              <div class="d-flex align-self-center">
+                <h1 class="g-font-weight-700 g-font-size-28 g-color-black mb-0">&{'crud.blank.title', type.modelName}</h1>
+              </div>
+
+            </div>
+
+            <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+    <div class="objectForm">
+    #{form action:@create(), enctype:'multipart/form-data'}
+        #{crud.form}
+        
+        	#{crud.custom 'menu_type'}
+		         <label class="g-mb-10" for="object_menu_type">
+			        菜单类型
+			    </label>
+			    <div class="g-pos-rel">
+				    <div class="row g-mx-minus-10">
+                          <div class="col-3 col-md-2 align-self-center g-px-10 g-mb-20 g-mb-0--md">
+                            <div class="form-group u-select--v2 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                              <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                              <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
+                            </span>
+                              <select class="js-select u-select--v2-select" required="required" style="display: none;" onchange="loadDataByMenuType(this.value)" name="object.menu_type" id="object_menu_type">
+                              	<option>请选择菜单类型</option>
+                                <option value="page" #{if object.menu_type=='page'} selected="selected"#{/if}>页面</option>
+                                <option value="list" #{if object.menu_type=='list'} selected="selected"#{/if}>新闻分类</option>
+                              </select>
+                              <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto g-mr-15"></i>
+                            </div>
+                          </div>
+
+                          <div class="col-9 col-md-10 align-self-center g-width-100--md g-px-10">
+                            <div class="form-group u-select--v2 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
+                              <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+                              <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
+                            </span>
+                              <select class="js-select u-select--v2-select" required="required" style="display: none;" id="menu_type_value">
+                                <option>请选择绑定的数据</option>
+                              </select>
+                              <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto g-mr-15"></i>
+                            </div>
+                          </div>
+                     </div>
+			    </div>
+		   #{/crud.custom}
+        
+        #{/crud.form}
+        <p class="crudButtons">
+            <input type="submit" name="_save" value="&{'crud.save', type.modelName}" />
+            <input type="submit" name="_saveAndContinue" value="&{'crud.saveAndContinue', type.modelName}" />
+            <input type="submit" name="_saveAndAddAnother" value="&{'crud.saveAndAddAnother', type.modelName}" />
+        </p>
+    #{/form}
+    </div>
+    </div>
+
+</div>
+
+#{set 'moreScripts'}
+
+<script type="text/javascript">
+function loadDataByMenuType(_type){
+	   var listCustomMenu = #{jsAction @AdminController.getByMenuType(':type') /}
+	   $.get(listCustomMenu({type: _type}), function(data) {
+		   $('#menu_type_value').html('');
+		   $.each(data, function(i, item) {
+			   if("title" in item) {
+				   console.log(item.title);
+				   
+			   	$('#menu_type_value').append('<option value="'+item.id+'">'+item.title+'</option>');
+			   }
+			   if("name" in item) {
+				$('#menu_type_value').append('<option value="'+item.id+'">'+item.name+'</option>');
+			   }
+		   }); 
+		   $('.js-select').selectpicker('refresh');
+		   
+		});
+}
+
+
+</script>
+
+#{/set}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Title -->
+        <title>中国科学院北京国家技术转移中心</title>
+
+        <!-- Required Meta Tags Always Come First -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="@{'/public/images/favicon.png'}">
+        <!-- CSS Global Compulsory -->
+        <link rel="stylesheet" href="@{'/public/images/vendor/bootstrap/bootstrap.css'}">
+        <!-- CSS Global Icons -->
+        <link rel="stylesheet" href="@{'/public/images/vendor/icon-awesome/css/font-awesome.min.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/icon-line/css/simple-line-icons.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/icon-etlinefont/style.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/icon-line-pro/style.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/icon-hs/style.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/animate.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/dzsparallaxer/dzsparallaxer.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/dzsparallaxer/dzsscroller/scroller.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/dzsparallaxer/advancedscroller/plugin.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/fancybox/jquery.fancybox.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/slick-carousel/slick/slick.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/hs-megamenu/src/hs.megamenu.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/hamburgers/hamburgers.min.css'}">
+
+        <!-- Revolution Slider -->
+        <link rel="stylesheet"
+              href="@{'/public/images/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css'}">
+        <link rel="stylesheet" href="@{'/public/images/vendor/revolution-slider/revolution/css/settings.css'}">
+        <link rel="stylesheet"
+              href="@{'/public/images/vendor/revolution-slider/revolution-addons/particles/css/revolution.addon.particles.css'}">
+
+        <link rel="stylesheet" href="@{'/public/images/vendor/master-slider/source/assets/css/masterslider.main.css'}">
+        <!-- CSS Unify -->
+        <link rel="stylesheet" href="@{'/public/images/css/unify-core.css'}">
+        <link rel="stylesheet" href="@{'/public/images/css/unify-components.css'}">
+        <link rel="stylesheet" href="@{'/public/images/css/unify-globals.css'}">
+
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="@{'/public/images/css/custom.css'}">
+        <link rel="stylesheet" href="@{'/public/images/css/user.css'}">
+        <style>
+            .scroll-message-style {
+                overflow: hidden;
+                /*height:30px;*/
+                float: right;
+                padding-right: 5%;
+            }
+
+            .reveal {
+                line-height: 38.5px;
+                height: 38.5px;
+                padding-right: 14px;
+                margin-right: 1px;
+                background-color: #fff;
+                border: 1px solid #107ef4;
+                border-bottom: 0px;
+                cursor: pointer;
+            }
+
+            .latent {
+                line-height: 38.5px;
+                height: 38.5px;
+                background-color: #fff;
+                padding-right: 14px;
+                border: 0px;
+                cursor: pointer;
+                /*margin-right: 10px;*/
+            }
+
+            .reveal_a {
+                color: #107ef4;
+            }
+
+            .latent_a {
+                color: #333;
+            }
+
+            .latent a:hover {
+                color: #333;
+            }
+
+            .top_p {
+                line-height: 38.5px;
+                height: 38.5px;
+                margin-bottom: 0px;
+            }
+
+            .top_img {
+                float: left;
+                padding-right: 4px;
+                margin-left: -1px;
+                height: 100%;
+            }
+
+            .g-bg-black-opacity-0_3--after::after, .g-bg-black-opacity-0_3--before::before {
+                background-color: rgba(0, 0, 0, 0) !important;
+            }
+
+            .banner_button {
+                border-radius: 50px;
+                width: 125px;
+                height: 38px;
+                /*position: fixed;*/
+                margin-top: 20px;
+                text-align: center;
+                z-index: 1000;
+                background: linear-gradient(to right, rgba(252, 215, 72, 1), rgba(252, 215, 72, 0.1));
+            }
+            .tp-bullets{
+                left: 49% !important;
+            }
+        </style>
+        #{get 'moreStyles' /}
+    </head>
+
+    <body>
+        <main>
+            <!-- Header v1 -->
+            <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance"
+                    data-header-fix-moment="100">
+                <div class="light-theme u-header__section g-transition-0_3 g-py-15"
+                     data-header-fix-moment-exclude="light-theme g-py-15"
+                     data-header-fix-moment-classes="light-theme u-shadow-v27 g-py-12" style="background-color: #122C65;">
+                    <nav class="js-mega-menu navbar navbar-expand-lg g-py-0 hs-menu-initialized hs-menu-horizontal">
+                        <div class="container g-pos-rel">
+                            <!-- Logo -->
+                            <a href="#" class="js-go-to navbar-brand u-header__logo" data-type="static">
+                                <img class="u-header__logo-img u-header__logo-img--main d-block g-width-180"
+                                     src="@{'/public/images/img/logo/logo.png'}" alt="Image Description"
+                                     data-header-fix-moment-exclude="d-block"
+                                     data-header-fix-moment-classes="d-none" style="width: 260px !important;">
+
+                                <img class="u-header__logo-img u-header__logo-img--main d-none g-width-180"
+                                     src="@{'/public/images/img/logo/logo.png'}"
+                                     alt="Image Description" data-header-fix-moment-exclude="d-none"
+                                     data-header-fix-moment-classes="d-block"
+                                     style="width: 260px !important;">
+                            </a>
+                            <!-- End Logo -->
+
+                            <!-- Navigation -->
+                            <div class="collapse navbar-collapse align-items-center flex-sm-row light-theme" id="navBar"
+                                 data-mobile-scroll-hide="true" class="nav2" style="background-color: #122C65;">
+                                <ul id="js-scroll-nav"
+                                    class="navbar-nav text-uppercase g-font-weight-700 g-font-size-14 g-pt-20 g-pt-7--lg ml-auto">
+                                    <li class="nav-item g-mr-10--lg g-mb-7 g-mb-0--lg active">
+                                        <a href="@{Application.index()}" class="nav-link p-0">主页 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mb-7 g-mb-0--lg"
+                                        data-animation-in="fadeIn"
+                                        data-animation-out="fadeOut">
+                                        <a id="nav-link--intro" class="nav-link p-0" href="@{Application.summarize()}" aria-haspopup="true"
+                                           aria-expanded="false" aria-controls="nav-submenu--intro">中心概况</a>
+                                        <ul
+                                                class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-color-dark g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                                                id="nav-submenu--intro" aria-labelledby="nav-link--intro">
+                                            <li class="dropdown-item">
+                                                <a class="nav-link" href="@{Application.summarize('summarize')}">中心介绍</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.summarize('teams')}">现任领导</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.summarize('organization')}">组织架构</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.summarize('honor')}">荣誉资质</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.summarize('roadmap')}">发展历程</a>
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mb-7 g-mb-0--lg">
+                                        <a id="nav-link--industry" class="nav-link p-0" href="@{Application.industry()}"
+                                           aria-haspopup="true"
+                                           aria-expanded="false" aria-controls="nav-submenu--industry">产业联盟</a>
+                                        <ul
+                                                class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-color-dark g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                                                id="nav-submenu--industry" aria-labelledby="nav-link--industry">
+                                            <li class="dropdown-item">
+                                                <a class="nav-link" href="@{Application.industry('industry')}">联盟简介</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.industry('rule')}">联盟章程</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.industry('agency')}">组织机构</a>
+                                            </li>
+                                            <!--                    <li class="dropdown-item ">-->
+                                            <!--                      <a class="nav-link" href="industry.html">联盟成员</a>-->
+                                            <!--                    </li>-->
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.industry('contact')}">联系联盟</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mb-7 g-mb-0--lg">
+                                        <a id="nav-link--service" class="nav-link p-0" href="#" aria-haspopup="true"
+                                           aria-expanded="false" aria-controls="nav-submenu--service">科技服务</a>
+                                        <ul
+                                                class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-color-dark g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                                                id="nav-submenu--service" aria-labelledby="nav-link--service">
+                                            <li class="dropdown-item">
+                                                <a class="nav-link" href="@{Application.shuaixian('kjjr')}">科技条件平台</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.shuaixian('zkxy')}">科技创新服务</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.shuaixian('kcdsj')}">科技载体运营</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.genfire('zhjh')}">概念验证中心</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.genfire('kcdsj')}">智汇营商大脑</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.genfire('czfhq')}">垂直产业加速器</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.genfire('kjjr')}">科技金融</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="@{Application.genfire('zkxy')}">中科学院</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item g-mx-10--lg g-mb-7 g-mb-0--lg">
+                                        <a href="@{Application.cases()}" class="nav-link p-0">服务案例</a>
+                                    </li>
+                                    <li class="nav-item g-mx-10--lg g-mb-7 g-mb-0--lg">
+                                        <a href="@{Application.contactus()}" class="nav-link p-0">联系我们</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Navigation -->
+
+                        <div class="d-inline-block g-hidden-md-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+                            <div class="input-group u-shadow-v19 g-rounded-50">
+                                <input
+                                        class="form-control form-control-sm g-color-gray-dark-v4 g-placeholder-gray-dark-v3 border-0 g-rounded-left-50 g-px-20"
+                                        type="email" placeholder="搜索" aria-label="搜索">
+                                <div class="input-group-append g-bg-white border-0 g-rounded-right-50">
+                                    <a class="btn u-btn-primary g-width-40 g-height-40 rounded-circle" type="submit"
+                                       style="margin-right: -1px;" href="search.html">
+                                        <i class="fa fa-send"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-15 g-right-0"
+                                type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar"
+                                data-toggle="collapse" data-target="#navBar">
+            <span class="hamburger hamburger--slider">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+                </div>
+                </nav>
+                </div>
+            </header>
+            <!-- End Header v1 -->
+
+        #{doLayout /}
+        <!-- Footer -->
+<!--        <div class="" style="background-color: #122C65;">-->
+            <div style="width: 100%;background-color: #122C65;">
+                <div class="container g-brd-bottom g-brd-white-opacity-0_3 g-py-30">
+                    <div class="row">
+                        <!-- Footer Content -->
+                        <div class="col g-mb-40 g-mb-0--lg">
+                            <a class="d-block g-mb-20" href="index.html">
+                                <img class="img-fluid" src="@{'/public/images/img/logo/logo-cas.png'}" alt="Logo">
+                            </a>
+                        </div>
+                        <!-- End Footer Content -->
+                        <!-- Footer Content -->
+                        <div class="col g-mb-40 g-mb-0--lg">
+                            <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+                                <h2
+                                        class="u-heading-v3__title h6 text-uppercase g-brd-white g-color-white-opacity-0_8 g-color-white--hover">
+                                    <strong>旗下平台</strong></h2>
+                            </div>
+
+                            <article>
+                                <h3 class="h6 g-mb-2">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="@{Application.shuaixian()}">中科率先</a>
+                                </h3>
+                            </article>
+
+                            <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                            <article>
+                                <h3 class="h6 g-mb-2">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="@{Application.genfire()}">中科智汇工场</a>
+                                </h3>
+                            </article>
+
+                        </div>
+                        <!-- Footer Content -->
+                        <div class="col">
+                            <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+                                <h2
+                                        class="u-heading-v3__title h6 text-uppercase g-brd-white g-color-white-opacity-0_8 g-color-white--hover">
+                                    <strong>快速链接</strong></h2>
+                            </div>
+
+                            <article>
+                                <h3 class="h6 g-mb-2">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://mail.cstnet.cn/"
+                                       target="_blank">邮箱系统</a>
+                                </h3>
+                            </article>
+
+                            <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                            <article>
+                                <h3 class="h6 g-mb-2">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="@{Application.blogroll()}">友情链接</a>
+                                </h3>
+                            </article>
+                        </div>
+                        <!-- End Footer Content -->
+
+                        <!-- Footer Content -->
+                        <div class="col">
+                            <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+                                <h2
+                                        class="u-heading-v3__title h6 text-uppercase g-brd-white g-color-white-opacity-0_8 g-color-white--hover">
+                                    <strong>扫码关注</strong></h2>
+                            </div>
+
+                            <img class="img-fluid" src="@{'/public/images/central/qr_code.png'}" style="height: 23%"/>
+                        </div>
+                        <!-- End Footer Content -->
+                    </div>
+                </div>
+            </div>
+
+<!--        </div>-->
+        <!-- End Footer -->
+
+        <!-- Copyright Footer -->
+        <footer class="g-color-white-opacity-0_8 g-py-20" style="background-color: #122C65;">
+            <div class="container text-center">
+                <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">Copyright &copy; 中国科学院北京国家技术转移中心　All
+                    Rights Reserved</small>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+
+        <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
+     "bottom": 15,
+     "right": 15,
+     "background-color":"#ffffff",
+     "color":"#999"
+   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+        </main>
+
+        <div class="u-outer-spaces-helper"></div>
+
+
+        <!-- JS Global Compulsory -->
+        <script src="@{'/public/images/vendor/jquery/jquery-3.2.1.min.js'}"></script>
+        <script src="@{'/public/images/vendor/jquery/jquery.min.js'}"></script>
+        <script src="@{'/public/images/vendor/jquery/kxbdmarquee.js'}"></script>
+        <script src="@{'/public/images/vendor/jquery-migrate/jquery-migrate.min.js'}"></script>
+        <script src="@{'/public/images/vendor/popper.js/popper.min.js'}"></script>
+        <script src="@{'/public/images/vendor/bootstrap/bootstrap.min.js'}"></script>
+        <script src="@{'/public/images/vendor/jquery/scrollForever.js'}"></script>
+
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bGkxcfeRohljVreryVUgSwUSgMngKzGo"></script>
+        <!-- JS Implementing Plugins -->
+        <script src="@{'/public/images/vendor/appear.js'}"></script>
+        <script src="@{'/public/images/vendor/slick-carousel/slick/slick.js'}"></script>
+        <script src="@{'/public/images/vendor/hs-megamenu/src/hs.megamenu.js'}"></script>
+        <script src="@{'/public/images/vendor/dzsparallaxer/dzsparallaxer.js'}"></script>
+        <script src="@{'/public/images/vendor/dzsparallaxer/dzsscroller/scroller.js'}"></script>
+        <script src="@{'/public/images/vendor/dzsparallaxer/advancedscroller/plugin.js'}"></script>
+        <script src="@{'/public/images/vendor/fancybox/jquery.fancybox.min.js'}"></script>
+        <script src="@{'/public/images/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js'}"></script>
+
+        <!-- JS Revolution Slider -->
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js'}"></script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js'}"></script>
+
+        <script src="@{'/public/images/vendor/revolution-slider/revolution-addons/particles/js/revolution.addon.particles.min.js'}">
+        </script>
+
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js'}"></script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js'}">
+        </script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js'}"></script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js'}">
+        </script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js'}">
+        </script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js'}">
+        </script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js'}">
+        </script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js'}">
+        </script>
+        <script src="@{'/public/images/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js'}"></script>
+
+        <!-- JS Unify -->
+        <script src="@{'/public/images/js/hs.core.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.carousel.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.header.js'}"></script>
+        <script src="@{'/public/images/js/helpers/hs.hamburgers.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.tabs.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.popup.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.counter.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.cubeportfolio.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.go-to.js'}"></script>
+        <script src="@{'/public/images/js/components/hs.onscroll-animation.js'}"></script>
+
+        <!-- JS Master Slider -->
+        <script src="@{'/public/images/vendor/master-slider/source/assets/js/masterslider.min.js'}"></script>
+        <!-- JS Customization -->
+        <script src="@{'/public/images/js/custom.js'}"></script>
+        <!-- JS Plugins Init. -->
+        <script>
+            // initialization of slider revolution
+            var tpj = jQuery,
+                revapi1174;
+            
+            
+            tpj(document).ready(function () {
+            		var width = document.documentElement.clientWidth;
+            		var layout="fullscreen";
+            		if(width<900) {
+            			layout="fullwidth";
+            		}
+            	
+            	
+                if (tpj("#rev_slider_24_1").revolution == undefined) {
+                    revslider_showDoubleJqueryError("#rev_slider_24_1");
+                } else {
+                    revapi24 = tpj("#rev_slider_24_1").show().revolution({
+                        sliderType: "standard",
+                        jsFileLocation: "public/images/vendor/revolution-slider/revolution/js/",
+                        sliderLayout: layout,
+                        dottedOverlay: "none",
+                        delay: 9000,
+                        navigation: {
+                            keyboardNavigation: "off",
+                            keyboard_direction: "horizontal",
+                            mouseScrollNavigation: "off",
+                            mouseScrollReverse: "default",
+                            onHoverStop: "off",
+                            bullets: {
+                                enable: true,
+                                hide_onmobile: false,
+                                style: "bullet-bar",
+                                hide_onleave: false,
+                                direction: "horizontal",
+                                h_align: "center",
+                                v_align: "bottom",
+                                h_offset: 0,
+                                v_offset: 50,
+                                space: 5,
+                                tmp: ''
+                            }
+                        },
+                        responsiveLevels: [1240, 1024, 778, 480],
+                        visibilityLevels: [1240, 1024, 778, 480],
+                        gridwidth: [1240, 1024, 778, 480],
+                        gridheight: [900, 768, 400, 400],
+                        lazyType: "none",
+                        shadow: 0,
+                        spinner: "off",
+                        stopLoop: "off",
+                        stopAfterLoops: -1,
+                        stopAtSlide: -1,
+                        shuffle: "off",
+                        autoHeight: "off",
+                        fullScreenAutoWidth: "off",
+                        fullScreenAlignForce: "off",
+                        fullScreenOffsetContainer: "",
+                        hideThumbsOnMobile: "off",
+                        hideSliderAtLimit: 0,
+                        hideCaptionAtLimit: 0,
+                        hideAllCaptionAtLilmit: 0,
+                        debugMode: false,
+                        fallbacks: {
+                            simplifyAll: "off",
+                            nextSlideOnWindowFocus: "off",
+                            disableFocusListener: false
+                        }
+                    });
+                }
+            });
+
+            function getid() {
+                var ih;
+                var active_a;
+                ih = location.href.split("=")[1];
+                $('#' + ih).addClass("active");
+                $('#' + ih).addClass("show").siblings().removeClass("active");
+                $('.left_tob').each(function () {
+                    $(this).find('li').each(function () {
+                        active_a = $(this).children('a').attr('href').split("#")[1];
+                        if (ih == active_a) {
+                            $(this).children('a').addClass('active');
+                            $(this).siblings().children('a').removeClass("active");
+                        }
+                    })
+                })
+            }
+
+            function getMap(){
+                var sContent =
+                        "<h4 style='margin:0 0 5px 0;padding:0.2em 0;width: 66%'>中国科学院国家技术转移中心</h4>" +
+                        "<img style='float:right;margin:4px;margin-top: -30px' id='imgDemo' src='@{'/public/images/central/transfer.jpg'}' width='140' height='120'/>" +
+                        "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中\n" +
+                        "\n" +
+                        "国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是\n" +
+                        "\n" +
+                        "科技部认定的首批国家技术转移示范机构...</p>" +
+                        "</div>";
+                var map = new BMap.Map("all_map");
+                var point = new BMap.Point(116.332277, 39.98619);
+                var marker = new BMap.Marker(point);
+                var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+                map.centerAndZoom(point, 15);
+                map.addOverlay(marker);
+                marker.addEventListener("click", function () {
+                    this.openInfoWindow(infoWindow);
+                    //图片加载完毕重绘infowindow
+                    document.getElementById('imgDemo').onload = function () {
+                        infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+                    }
+                });
+                map.enableScrollWheelZoom(true);
+            }
+
+            $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+
+                $.HSCore.components.HSHeader.init($('#js-header'));
+
+                // initialization of tabs
+                // $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+                $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+                // initialization of go to
+                $.HSCore.components.HSGoTo.init('.js-go-to');
+            });
+            $(window).on('load', function () {
+                // initialization of header
+                $.HSCore.components.HSHeader.init($('#js-header'));
+                $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+                // initialization of HSMegaMenu component
+                $('.js-mega-menu').HSMegaMenu({
+                    event: 'hover',
+                    pageContainer: $('.container'),
+                    breakpoint: 991
+                });
+
+                // initialization of cubeportfolio
+                $.HSCore.components.HSCubeportfolio.init('.cbp');
+
+                getid();
+                getMap();
+            });
+
+            var slider = new MasterSlider();
+
+            slider.setup('masterslider', {
+                width: 1000,
+                height: 520,
+                space: 10,
+                preload: 3,
+                autoplay: true,
+                loop: true,
+                view: 'flow'
+            });
+            slider.control('arrows');
+
+            var gallery = new MSGallery('ms-gallery-1', slider);
+
+            gallery.setup();
+
+            // $(window).on('resize', function () {
+            //     setTimeout(function () {
+            //         $.HSCore.components.HSTabs.init('[role="tablist"]');
+            //     }, 200);
+            // });
+
+            $(".yaowen").on("click", function () {
+                $(".tongzhi_gengduo").attr("style", "display:none;");//隐藏
+                $(".yaowen_gengduo").attr("style", 'display:block;line-height:38.4px');//显示
+                $(".yaowen").removeClass("latent").addClass("reveal");
+                $(".tongzhi").addClass("latent").removeClass("reveal");
+                $(".yaowen").children("a:eq(0)").removeClass("latent_a").addClass("reveal_a");
+                $(".tongzhi").children("a:eq(0)").removeClass("reveal_a").addClass("latent_a");
+                $(".tong1").attr("style", "display:block");
+                $(".tong2").attr("style", "display:none");
+                $(".xin1").attr("style", "display:block");
+                $(".xin2").attr("style", "display:none");
+            })
+            $(".tongzhi").on("click", function () {
+                $(".tongzhi_gengduo").attr("style", 'display:block;line-height:38.4px');//显示
+                $(".yaowen_gengduo").attr("style", 'display:none');//隐藏
+                $(".tongzhi").removeClass("latent").addClass("reveal");
+                $(".yaowen").removeClass("reveal").addClass("latent");
+                $(".tongzhi").children("a:eq(0)").removeClass("latent_a").addClass("reveal_a");
+                $(".yaowen").children("a:eq(0)").removeClass("reveal_a").addClass("latent_a");
+                $(".tong1").attr("style", "display:none");
+                $(".tong2").attr("style", "display:block");
+                $(".xin1").attr("style", "display:none");
+                $(".xin2").attr("style", "display:block");
+            })
+        </script>
+
+        #{get 'moreScripts' /}
+
+
+    </body>
+
+</html>

@@ -1,0 +1,66 @@
+#{extends 'main0.html' /}
+#{set title:'Home' /}
+
+<!-- Start 科技服务Banner -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"  style="background-image:url(@{'/public/images/central/genfire_banner.png'});height: 400px;" >
+</section>
+<!-- End 科技服务Banner -->
+
+
+<!-- 关于我们 -->
+<section class="container g-py-50">
+    <div class="row justify-content-center g-mb-60" style="margin: 0px">
+        <div class="col-lg-7">
+            <!-- Heading -->
+            <div class="text-center">
+                <h2 class="h3 g-color-black text-uppercase mb-2">关于中科智汇工场</h2>
+            </div>
+            <!-- End Heading -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="g-font-size-16 g-line-height-2 g-mb-30">
+            <p style="text-indent:2em;">
+                中科智汇工场，是落实《“十三五”时期中国科学院与北京市人民政府合作推进全国科技创新中心建设行动计划》协议精神，由中国科学院北京分院与北京市海淀区政府合作共建；
+                依托中国科学院科创资源和项目资源优势，聚焦和支持科创中心建设，服务高新技术产业，探索政策引导与市场化运营相结合的发展之路；围绕体制机制创新、科技成果转化、科技普及、创新人才培养等方面，
+                打造涵盖概念验证、垂直产业孵化加速、产业技术研究院、科技成果大数据平台、科技金融、知识产权等内容和产品，是中国科学院开展成果转移转化的科技创新综合体，科技成果转移转化服务与解决方案提供方。
+            </p>
+            <p style="text-indent:2em;">
+            中科智汇工场立足4项功能定位，推动科技成果转移转化工作：
+            </p>
+            <ul class="list-unstyled g-font-size-13 mb-0"  style="text-indent:4em;">
+                  <li class="d-flex mb-3">
+                    <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
+                    中科院各院所在京技术成果转化集聚地
+                  </li>
+                  <li class="d-flex mb-3">
+                    <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
+                    中科院项目成果对外辐射培育地
+                  </li>
+                  <li class="d-flex mb-3">
+                    <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
+                    中科院先进成果集中展示地
+                  </li>
+                  <li class="d-flex mb-3">
+                    <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
+                    中科院技术转移人才培养基地、产业孵化模式探索基地
+                  </li>
+                </ul>
+<p style="text-indent:2em;">
+作为中科院开展科技成果转移转化工作的科技创新综合体、中科院北京国家技术转移中心总部基地，中科智汇工场将聚焦支持全国科创中心建设，服务高新技术企业，打造科技成果转移转化新高地。
+            </p>
+        </div>
+    </div>
+</section>
+<script src="@{'/public/images/vendor/jquery/jquery-3.2.1.min.js'}"></script>
+<script>
+    function skip(){
+        var ih = location.href.split("=")[1];
+        const target = document.getElementById(ih);
+        target.scrollIntoView();
+    }
+    $(document).ready(function () {
+        skip();
+    });
+
+</script>

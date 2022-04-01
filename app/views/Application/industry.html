@@ -1,0 +1,421 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<style type="text/css">
+    #all_map {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        font-family: "微软雅黑";
+    }
+
+    .menu_tob {
+        position: absolute;
+        width: 80%;
+        top: 80px
+    }
+
+    .container_text {
+        padding-left: 0px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+</style>
+
+<!-- Start 中心概况 -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="background-image: url(@{'/public/images/central/zhongxin.jpg'});height: 400px">
+    <!-- <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">
+        <div class="g-mb-100">
+            <h1
+                    class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">
+                产业联盟</h1>
+            <span class="d-block lead g-color-white banner-text" style="text-align: center !important;">
+                    立足北京、辐射全国的科技成果转移转化公共服务平台
+        </div>
+    </div> -->
+</section>
+<!-- End 中心概况 -->
+
+
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-10">
+        <div class="row">
+            <div class="col-3">
+                <!-- Nav tabs -->
+                <article class="u-shadow-v21 u-shadow-v21--hover g-bg-white text-center g-overflow-hidden g-rounded-4 g-pos-rel g-z-index-2 g-cursor-pointer g-transition-0_3"   style="max-width: 230px; margin-top: -95px;">
+	              <!-- Article Header -->
+	              <header class="g-bg-blue-lineargradient-v2  g-pos-rel g-px-20 g-py-35">
+	                <strong class="d-block g-color-white g-font-size-24 g-line-height-0_7">
+	                    产业联盟	
+	                </strong>
+	              </header>
+	              <!-- End Article Header -->
+	              <div class="g-pt-0">
+                <ul class="nav flex-column u-nav-v2-1 left_tob" role="tablist"
+                    data-target="nav-2-1-primary-ver" data-tabs-mobile-type="slide-up-down"
+                    data-btn-classes="btn btn-md btn-block u-btn-outline-primary g-mb-20">
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none active" data-toggle="tab" href="#industry" role="tab">联盟简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#rule" role="tab">联盟章程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#agency" role="tab">组织结构</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#contact" role="tab">联系联盟</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- End Nav tabs -->
+                </article>
+            </div>
+		<div class="col-9">
+        <div id="nav-5-1-primary-hor-justified" class="tab-content g-pt-20">
+            <div class="tab-pane fade show active" id="industry" role="tabpanel">
+            <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">产业联盟</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>联盟简介</span>
+				            </li>
+				        </ul>
+                <div class="text-left g-mb-50">
+                    <h2 class="h4 g-color-primary">联盟简介</h2>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce" style="text-indent:2em;">
+                        中国科学院科技创新发展联盟（以下简称“联盟”）是由中国科学院北京国家技术转移中心联合相关院所发起设立，
+                        聚焦科技成果转移转化的产业联盟。旨在聚合科技成果转化要素和优质资源，加强中国科学院技术转移转化，
+                        促进成果产业化，为院所做好科技服务，大力支撑地方区域经济发展，积极开展技术经理人培训和推动科技成果
+                        扩散、流动、共享、应用并实现经济与社会价值的生态系统建设。联盟将创新科技成果转化机制，打造立足北京、
+                        辐射全国的科技成果转移转化公共服务平台。联盟成立后拟通过需求导向和市场选择等方式，协助院所与企业、地方、
+                        投资机构、科技服务机构等共同参与合作，推动一批前沿科技成果转化与示范推广，促进科技成果转化为现实生产力，
+                        配合国家战略，支撑重点产业转型升级与经济结构调整。
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="rule" role="tabpanel">
+            	<ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">产业联盟</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>联盟章程</span>
+				            </li>
+				        </ul>
+                <div class="text-left g-mb-50">
+                    <h2 class="h4 g-color-primary">联盟章程</h2>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10">第一章 总则</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            第一条 本团体的名称为中国科学院科技创新发展联盟（拟）。<br>
+                            第二条 本联盟是在自愿、平等、互利、合作的基础上，由创新科技产业相关的企事业单位、社团组织、高等院校、科研院所等自愿结成的跨行业、开放性、非营利性的社会团体。<br>
+                            第三条
+                            本联盟的宗旨是团结广大会员以及社会各界人士，加强中国科学院技术转移转化，促进成果产业化，大力支撑地方区域经济发展，积极推动科技成果扩散、流动、共享、应用并实现经济与社会价值的生态系统建设。
+                        </p>
+                    </div>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第二章 业务范围</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce"">
+                        本团体业务范围：以支撑建设北京科创中心为目标，以《中国科学院“十三五”发展规划纲要》为方针，以中国科学院各院所为技术源动力，以中科智汇工场为空间载体，加强联盟成员协同互助，积极开展交流合作，促进科技成果转移转化业态发展。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            （一）加强资源对接，打造各方资源联系的重要纽带
+                            加强与北京市各政府部门的对接，主动接受政府业务指导，积极承担政府委托的专项工作，及时反映技术转移行业发展状况和相关政策诉求，为政府重大决策和相关政策法规制定提供支撑。
+                            积极与其他科研机构、产业龙头企业、金融资本、新媒体网络等各方资源衔接，大力宣传推广联盟单位重大重点项目，积极布局符合北京需要的技术项目，主动为会员对接资源，促进科技成果转移转化。
+                            有效整合联盟单位科技创新资源和相关渠道资源，探索对外合作联动机制，发挥协同创新效应，主动服务区域经济社会发展和首都需求，提升社会服务能力。
+                            积极搭建国际技术转移交流平台，以联盟为窗口，推动跨地区、跨国界的技术转移，促进人才、技术、资本等创新要素流动。
+                        </p>
+                    </div>
+                </div>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            （二）搭建公共服务平台，为联盟单位发展建设提供支撑
+                            以需求为导向，围绕联盟单位科技成果转移转化全链条，与知识产权运营、成果评估筛选、中试熟化、企业孵化、投融资等机构建立合作关系，集聚一批服务科技成果转移转化的配套资源，提升联盟及其服务能力和专业化水平。
+                            服务人才队伍建设，发挥联盟专家资源优势，完善技术转移教材教辅、师资、考评体系，探索共建技术转移人才培养基地，为联盟单位提供职业化、专业化技术转移人才培训服务。
+                            繁荣学术研究，组织技术转移领域相关征文和学术研讨会，积极争取与学术期刊、出版社联合出版增刊、专刊、论文集和学术专著等，为联盟单位技术转移从业人员职业发展搭建平台。
+                        </p>
+                    </div>
+                </div>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            （三）着力改革创新，破除阻碍成果转化的共性关键问题
+                            鼓励和组织联盟单位围绕科技成果转化，开展政策理论研究，联合承担政府委托的各类研究课题，共同探索高校科技成果转化体制机制改革和创新。
+                            立足科技成果转移转化实践，组织联盟单位共同研究和解决国家政策落地过程中存在的问题和障碍，加强沟通磋商，共同规避科技成果转化过程中的法律和政策风险。
+                            积极组织联盟单位开展京内外、国内外的各类调研考察，开阔视野，挖掘和分析科技成果转化典型案例，宣传推广成功经验和先进做法，梳理制约发展的共性关键问题。
+                        </p>
+                    </div>
+                </div>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            （四）促进联盟内部合作交流，推动联盟单位资源开放共享
+                            通过定期和不定期组织联盟会员座谈、研讨，经常性开展经验交流、沙龙等各类活动，搭建联盟单位间的常态化业务交流平台，推动不同行业特色会员之间的融合和发展。
+                            促进联盟会员之间的资源开放共享，搭建以成果库、专家库、需求库为核心的线上数据平台，帮助联盟单位之间增进了解，实现优势互补，优化创新成果与地方产业需求对接的精准度。
+                        </p>
+                    </div>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第三章 会员</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            第一条本团体的单位会员或个人会员组成。<br>
+                            第二条申请加入本团体的会员，必须具备下列条件：<br>
+                            （一）拥护本团体的章程；<br>
+                            （二）有加入本团体的意愿；<br>
+                            （三）在本团体的行业领域内具有一定的影响。<br>
+                            第三条会员入会的程序：<br>
+                            （一）提交入会申请书；<br>
+                            （二）经理事会讨论通过；<br>
+                            （三）由理事会或理事会授权的机构发给会员证。<br>
+                            第四条会员享有下列权利：<br>
+                            （一）本团体的选举权、被选举权和表决权；<br>
+                            （二）参加本团体的各项活动；<br>
+                            （三）获得本团体服务的优先权；<br>
+                            （四）对本团体工作的批评建议权和监督权；<br>
+                            （五）优先利用协会提供的信息、资料权；<br>
+                            （六）入会自愿，退会自由。<br>
+                            第五条会员履行下列义务：<br>
+                            （一）执行本团体的决议；<br>
+                            （二）维护本团体的合法权益和声誉；<br>
+                            （三）完成本团体交办的工作；<br>
+                            （四）按规定交纳会费；<br>
+                            （五）向本团体反映情况，提供有关资料。<br>
+                            第六条会员退会应书面通知本团体，并交回会员证。会员一年不交纳会费或不参加本团体活动，视为自动退会。<br>
+                            第七条会员如有严重违反本章程的行为，经理事长办公会表决通过，予以除名。
+                        </p>
+                    </div>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第四章 组织机构</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            第八条联盟组织架构由联盟大会、理事会、常务理事会、监事会组成，常务理事会下设秘书处，同时设置若干专业委员会。<br>
+                            第九条本团体的最高权力机构是会员大会，其主要职责是：<br>
+                            （一）制定和修改本章程；<br>
+                            （二）选举和罢免理事、监事；<br>
+                            （三）审议理事会、监事会的工作报告和财务报告；<br>
+                            （四）决定重大变更和终止事宜；<br>
+                            （五）制定和修改会费标准；<br>
+                            （六）决定其他重大事项。<br>
+                            第十条会员大会须有2/3以上的会员出席方能召开，其决议须经到会会员2/3以上表决通过方能生效。<br>
+                            第十一条会员大会每届三年。召开会员大会30日前，应将会议准备材料送至社会团体登记管理机关审查，确认符合开会条件后方可召开。
+                            召开会员大会后将会议纪要及有关材料报社会团体登记管理机关，按规定办理成立登记手续。因特殊情况需提前或延期换届的，须由理事会表决通过，
+                            报社会团体登记管理机关批准同意。但延期换届最长不超过一年。<br>
+                            第十二条本团体设理事会，理事会在会员大会闭会期间执行会员大会的决议，领导本团体开展日常工作，对会员大会负责。<br>
+                            第十三条理事会的职责是：<br>
+                            （一）执行会员大会的决议；<br>
+                            （二）选举和罢免理事长、常务副理事长、副理事长、秘书长；<br>
+                            （三）筹备召开会员大会；<br>
+                            （四）向会员大会报告工作和财务状况；<br>
+                            （五）决定会员的吸收或除名；<br>
+                            （六）决定办事机构、分支机构、代表机构、实体机构的设立和办公住所的变更；<br>
+                            （七）决定副秘书长、各机构主要负责人的聘任；<br>
+                            （八）领导本团体各机构开展工作；<br>
+                            （九）制定内部管理制度；<br>
+                            （十）接受监事会提出的对本团体违纪问题的处理意见，提出解决办法并接受其监督;<br>
+                            （十一）决定其他重大事项。<br>
+                            第十四条理事会须有2/3以上理事出席方能召开，其决议须经到会理事2/3以上表决通过方能生效。<br>
+                            第十五条理事会每年至少召开一次会议。<br>
+                            第十六条本团体设立常务理事会，由常务理事组成。常务理事从理事中选举产生。常务理事会在理事会闭会期间行使下列职权，并对理事会负责：<br>
+                            （一）执行会员大会的决议；<br>
+                            （二）筹备召开会员大会；<br>
+                            （三）决定会员的吸收或除名；<br>
+                            （四）决定办事机构、分支机构、代表机构、实体机构的设立和办公住所的变更；<br>
+                            （五）决定副秘书长、各机构主要负责人的聘任；<br>
+                            （六）领导本团体各机构开展工作；<br>
+                            （七）制定内部管理制度；<br>
+                            （八）接受监事会提出的对本团体违纪问题的处理意见，提出解决办法并接受其监督。<br>
+                            常务理事会与理事会任期相同，与理事会同时换届。<br>
+                            第十七条常务理事会须有2/3以上常务理事出席方能召开，其决议须经到会常务理事2/3以上表决通过方能生效。<br>
+                            第十八条常务理事会至少半年召开一次会议。<br>
+                            第十九条本团体的理事长、常务副理事长、副理事长、秘书长必须具备下列条件：<br>
+                            （一）坚持党的路线、方针、政策，政治素质好；<br>
+                            （二）在本团体业务领域内有较大影响；<br>
+                            （三）最高任职年龄不超过70周岁，秘书长为专职；<br>
+                            （四）身体健康，能坚持正常工作；<br>
+                            （五）未受过剥夺政治权利的刑事处罚的；<br>
+                            （六）具有完全民事行为能力。<br>
+                            第二十条本团体的法定代表人由 担任。<br>
+                            本团体的法定代表人不得同时担任其他社会团体的法定代表人。<br>
+                            理事长任期不超过两届。<br>
+                            第二十一条本团体理事长行使下列职权：<br>
+                            （一）召集和主持理事会和会员大会；<br>
+                            （二）检查会员大会、理事会决议的落实情况；<br>
+                            （三）代表本团体签署有关重要文件；<br>
+                            （四）其他由理事会或会员大会授权办理的事宜。<br>
+                            第二十二条本团体秘书长行使下列职权：<br>
+                            （一）主持办事机构开展日常工作，组织实施年度工作计划；<br>
+                            （二）提名副秘书长以及各办事机构、分支机构、代表机构和实体机构主要负责人，交理事会或常务理事会决定；<br>
+                            （三）决定办事机构、代表机构、实体机构专职工作人员的聘用；<br>
+                            （四）处理其他日常事务。<br>
+                            第二十三条本团体设监事会，由三人组成，由会员大会选举产生，向会员大会负责。其主要职责：<br>
+                            （一）选举产生监事长；<br>
+                            （二）出席理事会（或常务理事会）；<br>
+                            （三）监督本团体及领导成员依照《社会团体登记管理条例》和有关法律、法规开展活动；<br>
+                            （四）督促本团体及领导成员依照核定的章程、业务范围及内部管理制度开展活动；<br>
+                            （五）对本团体成员违反团体纪律，损害本团体声誉的行为进行监督；<br>
+                            （六）对本团体的财务状况进行监督；<br>
+                            （七）对本团体的违法违纪行为提出处理意见，提交理事会并监督其执行。
+                        </p>
+                    </div>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第五章 资产管理</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            第二十四条本团体经费来源：<br>
+                            （一）会费；<br>
+                            （二）捐赠；<br>
+                            （三）政府资助；<br>
+                            （四）在核准的业务范围内开展活动或服务的收入；<br>
+                            （五）利息；<br>
+                            （六）其他合法收入。<br>
+                            第二十五条本团体按照会员大会制定或修改的会费标准收取会员会费，会费标准必须经过会员大表大会二分之一以上投票表决通过。<br>
+                            第二十六条本团体的经费必须用于本章程规定的业务范围和事业的发展，不得在会员中分配。<br>
+                            第二十七条本团体建立严格的财务管理制度，保证会计资料合法、真实、准确、完整。<br>
+                            第二十八条本团体配备具有专业资格的会计人员。会计不得兼任出纳。会计人员必须进行会计核算，实行会计监督。会计人员调动工作或离职时，必须与接管人员办清交接手续。<br>
+                            第二十九条本团体的资产管理执行国家规定的财务管理制度，接受会员大会和财政部门的监督。资产来源属于政府拨款或者社会捐赠、资助的，必须接受审计机关的监督，并将有关情况以适当方式向社会公布。<br>
+                            第三十条本团体换届或更换法定代表人之前必须接受社会团体登记管理机关组织的财务审计。<br>
+                            第三十一条本团体的资产任何单位和个人不得侵占、私分和挪用。<br>
+                            第三十二条本团体专职工作人员的工资和保险、福利待遇，参照国家对事业单位的有关规定执行。
+                        </p>
+                    </div>
+                </div>
+
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第六章 终止程序</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            第三十三条本团体完成宗旨、自行解散或由于分立、合并等原因需要注销的，由理事会或常务理事会提出终止动议。<br>
+                            第三十四条本团体终止动议须经会员大会表决通过，并报社团团体管理机关审查同意。<br>
+                            第三十五条本团体终止前，须在社团登记管理机关及有关机关指导下成立清算组织，清理债权债务，处理善后事宜。清算期间，不得开展清算以外的活动。<br>
+                            第三十六条本团体经社会团体登记管理机关办理注销登记手续后即为终止。<br>
+                            第三十七条本团体终止后的剩余财产，在社会团体登记管理机关的监督下，按照国家有关规定，用于发展与本团体宗旨相关的事业。
+                        </p>
+                    </div>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第七章 奖励机制</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            为充分调动各方的积极性共同推进科技成果的转移转化和产业化，联盟将建立相应的奖励机制。
+                            根据不同类会员的特点，采取不同的奖励方法，增强针对性和有效性，综合多种手段予以奖励和激励。
+                            具体奖励内容和办法另行制定。
+                        </p>
+                    </div>
+                </div>
+                <p class="h4 g-font-weight-600 g-mb-10 g-mt-10">第八章 附则</p>
+                <div class="container container_text">
+                    <div class="g-font-size-18 g-line-height-2">
+                        <p class="science_introduce">
+                            第三十九条本章程未尽事宜，经联盟理事会审议通过后，可对本章程进行补充或修正。<br>
+                            第四十条本章程的解释权属联盟常务理事会。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="agency" role="tabpanel">
+                	<ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">产业联盟</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>组织结构</span>
+				            </li>
+				        </ul>
+                    <div class="text-left g-mb-50">
+                        <h2 class="h4 g-color-primary">组织结构</h2>
+                    </div>
+                    <img src="@{'/public/images/central/industry_organ.jpg'}" style="width: 100%">
+                    <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                        <p class="science_introduce g-pt-100" style="text-indent:2em;">
+                            根据社会团体规章制度及联盟章程要求，联盟将设立会员大会作为最高权力机构，理事会、常务理事会、监事会组成，常务理事会下设秘书处，同时设置若干专业委员会。
+                            理事会：由理事组成，在会员大会闭会期间执行会员大会的决议，领导联盟开展日常工作，对会员大会负责。
+                            常务理事会：由常务理事组成。常务理事从理事中选举产生。常务理事会在理事会闭会期间行使相关职权，并对理事会负责。
+                            秘书处：负责主持秘书处顺利开展日常工作，组织实施年度工作计划等。
+                            监事会：监督本团体及领导成员依照《社会团体登记管理条例》和有关法律、法规开展活动。
+                        </p>
+                    </div>
+            </div>
+            <div class="tab-pane fade " id="contact" role="tabpanel">
+                	<ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">产业联盟</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>联系联盟</span>
+				            </li>
+				        </ul>
+                    <div class="text-left g-mb-50">
+                        <h2 class="h4 g-color-primary">联系联盟</h2>
+                    </div>
+                    <div class="row" style="margin: 0px;margin-bottom: 20px;height: 400px;margin-top: 20px;">
+                        <div class="col-md-12">
+                            <div id="all_map"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                                            <span class="u-icon-v1 g-color-primary">
+                              <i class="icon-call-end u-line-icon-pro" style="line-height: 30px !important;"></i>
+                            </span>
+                            <span style="color: #333;">电话：010-83458881</span>
+                        </div>
+                        <div class="col-md-5">
+                                            <span class="u-icon-v1 g-color-primary">
+                              <i class="icon-communication-011 u-line-icon-pro"
+                                 style="line-height: 30px !important;"></i>
+                            </span>
+                            <span style="color: #333;">地址：北京市海淀区建材城中路27号</span>
+                        </div>
+                        <div class="col-md-4">
+                                            <span class="u-icon-v1 g-color-primary">
+                              <i class="icon-envelope-letter u-line-icon-pro" style="line-height: 30px !important;"></i>
+                            </span>
+                            <span style="color: #333;">邮箱： zhzk@nctt.ac.cn</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->

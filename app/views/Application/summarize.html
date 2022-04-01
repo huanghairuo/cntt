@@ -1,0 +1,671 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<style>
+    
+
+    .timeline_content_left {
+        font-size: 16px;
+        color: #111;
+    }
+
+    .timeline_left {
+        text-align: right;
+        padding-right: 17%;
+    }
+
+
+    .timeline_right {
+        text-align: left;
+        padding-left: 17%
+    }
+
+    .honor_content:hover {
+        background-color: #4876FF;
+        color: #fff;
+    }
+</style>
+<!-- Start 中心概况 -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="background-image: url(@{'/public/images/central/zhongxin.jpg'});height: 400px">
+    <!-- <div class="container u-bg-overlay__inner text-center g-pt-120 g-pb-70">
+        <div class="g-mb-100">
+            <h1
+                    class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">
+                中心概况</h1>
+            <span
+                    class="d-block lead g-color-white banner-text">中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是科技部认定的首批国家技术转移示范机构。北京中心在业务上接受中科院北京分院的直接领导，是中国科学院开展科技成果转化、技术转移工作的重要平台.</span>
+        </div>
+    </div> -->
+</section>
+<!-- End 中心概况 -->
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-10">
+    	<div class="row">
+        	<div class="col-3">
+        	<article class="u-shadow-v21 u-shadow-v21--hover g-bg-white text-center g-overflow-hidden g-rounded-4 g-pos-rel g-z-index-2 g-cursor-pointer g-transition-0_3"  style="max-width: 230px; margin-top: -95px;">
+	              <!-- Article Header -->
+	              <header class="g-bg-blue-lineargradient-v2 g-pos-rel g-px-20 g-py-35">
+	                <strong class="d-block g-color-white g-font-size-24 g-line-height-0_7">
+	                    中心概况	
+	                </strong>
+	              </header>
+	              <!-- End Article Header -->
+	
+	              <!-- Article Content -->
+	              <div class="g-pt-0">
+                <!-- Nav tabs -->
+                <ul class="nav flex-column u-nav-v2-1  menu_tob left_tob" role="tablist"
+                    data-target="nav-2-1-primary-ver" data-tabs-mobile-type="slide-up-down"
+                    data-btn-classes="btn btn-md btn-block u-btn-outline-primary g-mb-20">
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none active" data-toggle="tab" href="#summarize" role="tab">公司简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#teams" role="tab">现任领导</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#organization" role="tab">组织架构</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#honor" role="tab">荣誉资质</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none" data-toggle="tab" href="#roadmap" role="tab">发展历程</a>
+                    </li>
+                </ul>
+                <!-- End Nav tabs -->
+                </div>
+                </article>
+            </div>
+
+		<div class="col-9">
+        <!-- Tab panes -->
+        <div id="nav-5-1-primary-hor-justified" class="tab-content g-pt-20">
+            <div class="tab-pane fade show active" id="summarize" role="tabpanel">
+                
+                <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>公司简介</span>
+				            </li>
+				        </ul>
+                <div class="text-left g-mb-50">
+                    <h2 class="h4 g-color-primary">公司简介</h2>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                        中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中
+                        国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是
+                        科技部认定的首批国家技术转移示范机构。北京中心在业务上接受中科院北京分院的直接领导，是中国科学院开展科技
+                        成果转化、技术转移工作的重要平台。
+                    </p>
+                    <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                        北京中心秉承“创新技术转移模式，服务区域经济发展”的理念，不断推动科技成果转移转化，助力区域产业升级；
+                        不断探索机制体制创新，为创新创业营造良好的氛围；不断完善技术转移服务平台，为技术供需双方提供全方位的科技服务。
+                    </p>
+                    <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                        北京中心自成立以来致力于整合院内外科技资源，并不断加强与地方政府、科研院所和企业的合作，形成了以重大
+                        项目推进平台、首都科技条件平台、科技金融平台、国际技术转移平台、京外科技合作平台、知识产权平台及技术转移
+                        产业联盟为主体的“6+1”技术转移工作体系。在大众创业、万众创新的新常态下，北京中心不断进行市场化探索，形成
+                        了以“科技智库、科技金融、科技培训、科技孵化”四轮驱动的市场化业务体系。
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="teams" role="tabpanel">
+                <section class="container g-pb-70">
+                    <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>现任领导</span>
+				            </li>
+				        </ul>
+                    <div class="text-left g-mb-50">
+                        <h2 class="h4 g-color-primary">现任领导</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-20 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/hsy.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">黄韶勇</strong>
+                                    <span>主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5">黄韶勇，现任中国科学院北京国家技术转移中心主任，负责中心及公司工作整体协调，监督参控股公司发展。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12 g-mb-30">
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-20 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/zn.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">赵 楠</strong>
+                                    <span>常务副主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5">赵楠，现任中国科学院北京国家技术转移中心常务副主任，负责中心日常运营及管理工作。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 g-mb-30">
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-20 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/ccn.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">崔常男</strong>
+                                    <span>副主任</span>
+                                </div>
+                                <p style="cursor:pointer;" class="g-font-size-13 g-line-height-1_5"
+                                   title="崔常男，现任中国科学院北京国家技术转移中心副主任，分管市场化工作。民进中央专委会委员、民进北京市委青年专委会主任、民进海淀区委委员、民进海淀区委青年专委会主任。第十届海淀区政协委员、第八届海淀区青联常委。">
+                                    崔常男，现任中国科学院北京国家技术转移中心副主任，分管市场化工作。民进中央专委会委员、民进北京市委青年专委会主任、民进海淀区委委员、民进海淀区委青年专委会主任。第十届海淀区政协委员、第八届海淀区青联常委。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 g-mb-30">
+                            <div class="u-shadow-v3 g-bg-white g-brd-around g-line-height-2 g-pa-20 g-mb-30"
+                                 role="alert" style="height: 217px !important;">
+                                <img class="w-100" src="@{'/public/images/img/teams/yzf.jpg'}" alt="Image Description"
+                                     style="width: 35% !important;float: left;margin-right: 20px;">
+                                <div>
+                                    <strong style="font-size: 20px;color: #333;">姚作芳</strong>
+                                    <span>副主任</span>
+                                </div>
+                                <p class="g-font-size-13 g-line-height-1_5">姚作芳，现任中国科学院北京国家技术转移中心副主任，负责中心综合行政管理等工作。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="organization" role="tabpanel" style="text-align: center">
+                 <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>组织架构</span>
+				            </li>
+				        </ul>
+				<div class="text-left g-mb-50">
+                    <h2 class="h4 g-color-primary">组织架构</h2>
+                </div>
+                <img src="@{'/public/images/central/organization.png'}">
+            </div>
+           <div class="tab-pane fade container" id="honor" role="tabpanel">
+		        <ul class="d-flex u-list-inline mb-4">
+		            <li class="list-inline-item g-mr-15">
+		              <a class="g-color-gray-light-v2" href="#">主页</a>
+		              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+		            </li>
+		            <li class="list-inline-item g-mr-15">
+		              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+		              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+		            </li>
+		            <li class="list-inline-item g-color-gray-light-v2">
+		              <span>荣誉资质</span>
+		            </li>
+		        </ul>
+		        <div class="text-left g-mb-50">
+                   <h2 class="h4 g-color-primary">荣誉资质</h2>
+                </div>
+                <div class="row">
+                	<div class="col-12">
+                	
+		                <!-- MasterSlider Main -->
+				      <div id="masterslider2" class="master-slider ms-skin-default g-mt-50 g-mb-50">
+				        <div class="ms-slide" data-delay="3" data-fill-mode="fill">
+				          <img src="@{'/public/images/img/blank.gif'}" alt="" title="" data-src="@{'/public/images/central/honor1.png'}" />
+				          <div class="ms-info">
+				          	<p style="color: #3d3d3d; text-align: center;">2014年4月被科技部中国技术市场协会评为"2013年度科技服务诚信机构"</p>
+				          </div>
+				        </div>
+				        <div class="ms-slide" data-delay="3" data-fill-mode="fill">
+				          <img src="@{'/public/images/img/blank.gif'}" alt="" title="" data-src="@{'/public/images/central/honor2.jpg'}" />
+				          <div class="ms-info">
+				          	<p style="color: #3d3d3d; text-align: center;">2014年9月获科技部“中国技术市场协会金桥奖”先进集体奖</p>
+				          </div>
+				        </div>
+				        <div class="ms-slide" data-delay="3" data-fill-mode="fill">
+				          <img src="@{'/public/images/img/blank.gif'}" alt="" title="" data-src="@{'/public/images/central/honor3.jpg'}" />
+				          <div class="ms-info">
+				          	<p style="color: #3d3d3d; text-align: center;">2015年4月被科技部中国技术市场协会评为“2014年度科技服务诚信机构”。</p>
+				          </div>
+				        </div>
+				        <div class="ms-slide" data-delay="3" data-fill-mode="fill">
+				          <img src="@{'/public/images/img/blank.gif'}" alt="" title="" data-src="@{'/public/images/central/honor5.jpg'}" />
+				          <div class="ms-info">
+				          	<p style="color: #3d3d3d; text-align: center;">2012年获中科院北京分院、中关村科技园区管理委员会“特别贡献奖”</p>
+				          </div>
+				        </div>
+				        <div class="ms-slide" data-delay="3" data-fill-mode="fill">
+				          <img src="@{'/public/images/img/blank.gif'}" alt="" title="" data-src="@{'/public/images/central/honor6.jpg'}" />
+				          <div class="ms-info">
+				          	<p style="color: #3d3d3d; text-align: center;">2011年获第十三届北京技术市场协会金桥奖“集体一等奖”</p>
+				          </div>
+				        </div>
+				      </div>
+				      <!-- END MasterSlider Main -->
+				      </div>
+                </div>
+                <div class="row no-gutters">
+				  <div class="col-md-3 g-mb-30 g-mb-0--md">
+				    <article class="text-center u-block-hover g-bg-gray-dark-v2--hover g-transition-0_4">
+				      <figure>
+				        <img class="img-fluid" src="@{'/public/images/central/honor8.jpg'}" alt="Image Description" style="height:122px;">
+				      </figure>
+				      <h3 class="h6 text-uppercase g-font-weight-600 g-letter-spacing-2 g-color-white--hover g-pa-30-20 g-mb-0">
+				        2008年被评为“中关村20周年创新发展突出贡献单位”
+				      </h3>
+				      <a class="js-fancybox u-link-v2" href="javascript:;" data-fancybox="lightbox-gallery--16" data-src="@{'/public/images/central/honor8.jpg'}" data-caption="Lightbox Gallery">
+				      </a>
+				    </article>
+				  </div>
+				  <div class="col-md-3 g-mb-30 g-mb-0--md">
+				    <article class="text-center u-block-hover g-bg-gray-dark-v2--hover g-transition-0_4">
+				      <figure>
+				        <img class="img-fluid" src="@{'/public/images/central/honor9.jpg'}" alt="Image Description" style="height:122px;">
+				      </figure>
+				      <h3 class="h6 text-uppercase g-font-weight-600 g-letter-spacing-2 g-color-white--hover g-pa-30-20 g-mb-0">
+				        2011年获科技部火炬中心首批“创新驿站”试点单位
+				      </h3>
+				      <a class="js-fancybox u-link-v2" href="javascript:;" data-fancybox="lightbox-gallery--16" data-src="@{'/public/images/central/honor9.jpg'}" data-caption="Lightbox Gallery">
+				      </a>
+				    </article>
+				  </div>
+				  <div class="col-md-3 g-mb-30 g-mb-0--md">
+				    <article class="text-center u-block-hover g-bg-gray-dark-v2--hover g-transition-0_4">
+				      <figure>
+				        <img class="img-fluid" src="@{'/public/images/central/honor4.jpg'}" alt="Image Description" style="height:122px;">
+				      </figure>
+				      <h3 class="h6 text-uppercase g-font-weight-600 g-letter-spacing-2 g-color-white--hover g-pa-30-20 g-mb-0">
+				        2013年获中科院北京分院、中关村科技园区管理委员会技术转移工作组...
+				      </h3>
+				      <a class="js-fancybox u-link-v2" href="javascript:;" data-fancybox="lightbox-gallery--16" data-src="@{'/public/images/central/honor4.jpg'}" data-caption="Lightbox Gallery">
+				      </a>
+				    </article>
+				  </div>
+				  <div class="col-md-3 g-mb-30 g-mb-0--md">
+				    <article class="text-center u-block-hover g-bg-gray-dark-v2--hover g-transition-0_4">
+				      <figure>
+				        <img class="img-fluid" src="@{'/public/images/central/honor7.jpg'}" alt="Image Description" style="height:122px;">
+				      </figure>
+				      <h3 class="h6 text-uppercase g-font-weight-600 g-letter-spacing-2 g-color-white--hover g-pa-30-20 g-mb-0">
+				        2016年9月获"中国技术市场协会金桥奖"突出贡献集体奖
+				      </h3>
+				      <a class="js-fancybox u-link-v2" href="javascript:;" data-fancybox="lightbox-gallery--16" data-src="@{'/public/images/central/honor7.jpg'}" data-caption="Lightbox Gallery">
+				      </a>
+				    </article>
+				  </div>
+				  </div>
+                
+                
+                
+                <div class="row">
+                    <div class="col-6">
+                        <div class="u-shadow-v1-3 g-line-height-2 g-pa-20 g-mb-20">
+                            <p class="mb-0">2014年3月获中科院北京分院、中关村科技园区管理委员会技术转移工作组织奖"特别贡献奖"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="u-shadow-v1-3 g-line-height-2 g-pa-20 g-mb-20 honor_content">
+                            <p class="mb-0">2014年1月在中科院院级非法人单元考评获中介型机构第一名
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="u-shadow-v1-3 g-line-height-2 g-pa-20 g-mb-20 honor_content">
+                            <p class="mb-0">2011年获科技部“中国技术市场协会金桥奖先进集体奖”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="u-shadow-v1-3 g-line-height-2 g-pa-20 g-mb-20 honor_content">
+                            <p class="mb-0">2010年获北京市科委“首都科技条件平台研发试验服务基地优秀管理奖”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="u-shadow-v1-3 g-line-height-2 g-pa-20 g-mb-20 honor_content">
+                            <p class="mb-0">2009年获中科院院地合作局"院地合作集体奖"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="u-shadow-v1-3 g-line-height-2 g-pa-20 g-mb-20 honor_content">
+                            <p class="mb-0">2008年被科技部认定为“首批国家技术转移示范机构”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="tab-pane fade container" id="roadmap" role="tabpanel" style="position: relative">
+                <section class="">
+                    <div class="container">
+                        <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>发展历程</span>
+				            </li>
+				        </ul>
+				        <div class="text-left g-mb-50">
+                            <h2 class="h4 g-color-primary">发展历程</h2>
+                        </div>
+
+                        <div class="row u-timeline-v1-wrap g-mx-minus-15">
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                                    </div>
+
+                                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5">
+                                        <h3 class="timeline_year_left timeline_left">2017年</h3>
+                                        <p class="timeline_content_left timeline_left">中国科学院北京国家技术转移中心深化改革</p>
+                                        <figure class="g-pos-rel timeline_left">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/2017.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-left g-pl-60 g-pl-40--md g-mt-60--md g-mb-60 g-mb-0--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-mr-13 g-mr-minus-8--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5">
+                                        <h3 class="timeline_year_right timeline_right">2016年</h3>
+                                        <p class="timeline_content_left timeline_right">中关村管委会与北京分院签署共建协议</p>
+                                        <figure class="g-pos-rel timeline_right">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/else.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                                    </div>
+
+                                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5">
+                                        <h3 class="timeline_year_left timeline_left">2013年</h3>
+                                        <p class="timeline_content_left timeline_left">成立十周年,累计起完善的技术转移工作体系，并开始市场化探索</p>
+                                        <figure class="g-pos-rel timeline_left">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/2013.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-left g-pl-60 g-pl-40--md g-mt-60--md g-mb-60 g-mb-0--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-mr-minus-8--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5">
+                                        <h3 class="timeline_year_right timeline_right">2011年</h3>
+                                        <p class="timeline_content_left timeline_right">
+                                            海淀区政府、中关村管委会、北京市科委和北京分院四方共建北京中心</p>
+                                        <figure class="g-pos-rel timeline_right">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/else.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                                    </div>
+
+                                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5" style="text-align: center">
+                                        <h3 class="timeline_year_left timeline_left">2008年</h3>
+                                        <p class="timeline_content_left timeline_left">科技部首批国家级技术转移中心之一</p>
+                                        <figure class="g-pos-rel timeline_left">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/else.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-left g-pl-60 g-pl-40--md g-mt-60--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-mr-minus-8--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5">
+                                        <h3 class="timeline_year_right timeline_right">2005年</h3>
+                                        <p class="timeline_content_left timeline_right">北京分院成立，成为北京分院下属机构</p>
+                                        <figure class="g-pos-rel timeline_right">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/else.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+                            <!-- Timeline Box -->
+                            <div class="col-md-6 g-orientation-right g-pl-60 g-pl-15--md g-pr-40--md g-mb-60 g-mb-0--md">
+                                <div class="u-timeline-v1__icon g-color-gray-light-v5 g-ml-13 g-ml-minus-10--md">
+                                    <i class="d-inline-block g-width-16 g-height-16 g-bg-white g-brd-3 g-brd-style-solid g-brd-gray-light-v4 g-rounded-50"></i>
+                                </div>
+
+                                <div class="g-pos-rel">
+                                    <!-- Timeline Arrow -->
+                                    <div class="g-hidden-sm-down u-triangle-inclusive-v1--left g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--left__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--left__back g-brd-gray-light-v4-left g-brd-gray-light-v4-right"></div>
+                                    </div>
+
+                                    <div class="g-hidden-md-up u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
+                                        <div class="u-triangle-inclusive-v1--right__front g-brd-white-left g-brd-white-right"></div>
+                                        <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v4-right"></div>
+                                    </div>
+                                    <!-- End Timeline Arrow -->
+
+                                    <!-- Timeline Content -->
+                                    <article class="u-timeline-v1 g-pa-5" style="text-align: center">
+                                        <h3 class="timeline_year_left timeline_left">2003年</h3>
+                                        <p class="timeline_content_left timeline_left">经原国家经贸委、教育部和中 科院批准成立</p>
+                                        <figure class="g-pos-rel timeline_left">
+                                            <!-- <img class="img-fluid" src="@{'/public/images/central/2003_1.png'}"
+                                                 alt="Image Description"> -->
+                                        </figure>
+                                    </article>
+                                    <!-- End Timeline Content -->
+                                </div>
+                            </div>
+                            <!-- End Timeline Box -->
+                        </div>
+                    </div>
+                </section>
+                
+        </div>
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->
+
+#{set 'moreScripts'}
+<script>
+var slider2 = new MasterSlider();
+
+slider2.control('arrows', {
+  autohide: true,
+  overVideo: true
+});
+slider2.control('circletimer', {
+  autohide: false,
+  overVideo: true,
+  color: '#FFFFFF',
+  radius: 4,
+  stroke: 9
+});
+slider2.control('slideinfo', {
+  autohide: false,
+  overVideo: true,
+  dir: 'h',
+  align: 'bottom',
+  inset: false,
+  margin: 10
+});
+slider2.setup("masterslider2", {
+	width: 500,
+    height: 400,
+    minHeight: 0,
+    space: 10,
+    preload: 5,
+    start: 1,
+    grabCursor: true,
+    swipe: true,
+    mouse: true,
+    keyboard: false,
+    layout: "partialview",
+    wheel: false,
+    autoplay: false,
+    instantStartLayers: false,
+    loop: true,
+    shuffle: false,
+    preload: 0,
+    heightLimit: true,
+    autoHeight: false,
+    smoothHeight: true,
+    endPause: false,
+    overPause: false,
+    fillMode: "fill",
+    centerControls: true,
+    startOnAppear: false,
+    layersMode: "center",
+    autofillTarget: "",
+    hideLayers: false,
+    fullscreenMargin: 0,
+    speed: 20,
+    dir: "h",
+    parallaxMode: 'swipe',
+    view: "partialWave"
+});
+</script>
+#{/set}
+

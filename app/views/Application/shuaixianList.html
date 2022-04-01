@@ -1,0 +1,22 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-100">
+        <div class="lanmu">新闻动态</div>
+        <div class="textlist1" style="margin-top:7px;">
+            #{list items: shuaixianList, as:'article' }
+            <ul>
+                <li>
+                    <span>${article?.update_at.format('yyyy-MM-dd')}</span>
+                    <a href="@{article(article.id)}"
+                       target="_blank" class="hei1" title="${article?.title}">${article?.title}
+                    </a>
+                </li>
+            </ul>
+            #{/list}
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->

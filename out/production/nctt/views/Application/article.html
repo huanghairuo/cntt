@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title: article.title /}
+
+<!-- 内容 -->
+    <section id="content" class="g-bg-secondary">
+        <div class="container g-py-100">
+            <div id="xlmain">
+                <p class="wztitle">${article.title}</p>
+                <p class="info">文章来源：${article.source}&nbsp;&nbsp;|&nbsp;&nbsp;发布时间：${article.create_at.format('yyyy-MM-dd')}&nbsp;&nbsp;</p>
+                <div class="text nrhei">
+                    <div class=TRS_Editor>
+                    		${article.description.raw()}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End 内容 -->

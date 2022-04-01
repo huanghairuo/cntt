@@ -1,0 +1,131 @@
+#{extends 'main0.html' /}
+#{set title:'Home' /}
+
+<style>
+.cases p img {
+	height: 200px;
+}
+</style>
+
+<!-- Start 科技服务Banner -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3" style="background-image: url(@{'/public/images/central/cases_banner.png'});height: 400px;">
+</section>
+<section class="g-bg-gray-light-v5 g-pt-50 g-pb-30">
+    <div class="container g-py-70">
+        <div class="row cases">
+            #{list items: governments, as:'article' }
+            <div class="col-sm-4 col-md-4">
+            	<article class="u-shadow-v21--hover g-mb-30 g-brd-around g-brd-blue--hover g-pa-10 g-brd-around g-brd-gray-light-v3">
+		            <figure class="g-pos-rel">
+		              <img class="img-fluid w-100" src="@{Application.thumnails(article.id)}" alt="${article.title}" style="max-height:153px">
+		
+		              <!-- <figcaption class="g-pos-abs g-top-20 g-left-20">
+		                <a class="btn btn-sm u-btn-red rounded-0" href="#">政府</a>
+		              </figcaption> -->
+		            </figure>
+		
+		            <div class="g-pt-15">
+		              <h3 class="g-font-size-18 g-font-weight-700 g-mb-15">
+							<div class="media">
+								<div class="d-flex align-self-center mr-3">
+									<span class="u-icon-v3 u-icon-size--xs g-color-red g-brd-around g-brd-red g-bg-red-opacity-0_1 g-bg-red--hover g-color-white--hover rounded-circle">
+										<i class="icon-hotel-restaurant-139 u-line-icon-pro"></i>
+									</span>
+								</div>
+								<div class="media-body align-self-center">
+									<h3 class="g-font-size-18 g-font-weight-700 g-color-red mb-0">政府</h3>
+								</div>
+								<div class="align-self-center">
+									<a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover g-ml-10 pull-right" href="#">${article.title}</a>
+								</div>
+							</div>
+
+						</h3>
+		
+		              
+
+					</div>
+					<div class="g-mb-30 g-height-100">
+		                <p>${article.description.raw()}</p>
+		            </div>
+		        </article>
+            </div>
+            #{/list}
+
+            #{list items: institutes, as:'article' }
+            <div class="col-sm-4 col-md-4">
+            	<article class="u-shadow-v21--hover g-mb-30 g-brd-around g-brd-blue--hover g-pa-10 g-brd-around g-brd-gray-light-v3">
+		            <figure class="g-pos-rel">
+		              <img class="img-fluid w-100" src="@{Application.thumnails(article.id)}" alt="${article.title}" style="max-height:153px">
+		
+		              <!-- <figcaption class="g-pos-abs g-top-20 g-left-20">
+		                <a class="btn btn-sm u-btn-yellow rounded-0" href="#">院所</a>
+		              </figcaption> -->
+		            </figure>
+		
+		            <div class="g-pt-15">
+		              <h3 class="g-font-size-18 g-font-weight-700 g-mb-15">
+						<div class="media">
+							<div class="d-flex align-self-center mr-3">
+								<span class="u-icon-v3 u-icon-size--xs  g-color-blue g-brd-around g-brd-blue g-bg-blue-opacity-0_1 g-bg-blue--hover g-color-white--hover rounded-circle">
+									<i class="icon-education-127 u-line-icon-pro"></i>
+								</span>
+							</div>
+							<div class="media-body align-self-center">
+								<h3 class="g-font-size-18 g-font-weight-700 g-color-blue mb-0">院所</h3>
+							</div>
+							<div class="align-self-center">
+								<a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover g-ml-10 pull-right" href="#">${article.title}</a>
+							</div>
+						</div>
+
+		              </h3>
+		
+		              <div class="g-mb-30 g-height-100">
+		                <p>${article.description.raw()}</p>
+		              </div>
+
+		            </div>
+		        </article>
+            </div>
+            #{/list}
+
+            #{list items: enterprises, as:'article' }
+            <div class="col-sm-4 col-md-4">
+            	<article class="u-shadow-v21--hover g-brd-around g-brd-blue--hover g-pa-10 g-brd-around g-brd-gray-light-v3">
+		            <figure class="g-pos-rel">
+		              <img class="img-fluid w-100" src="@{Application.thumnails(article.id)}" alt="${article.title}" style="max-height:153px">
+		
+		              <!-- <figcaption class="g-pos-abs g-top-20 g-left-20">
+		                <a class="btn btn-sm u-btn-blue rounded-0" href="#">企业</a>
+		              </figcaption> -->
+		            </figure>
+		
+		            <div class="g-pt-15">
+		              <h3 class="g-font-size-18 g-font-weight-700 g-mb-15">
+						<div class="media">
+							<div class="d-flex align-self-center mr-3">
+								<span class="u-icon-v3 u-icon-size--xs  g-color-purple g-brd-around g-brd-purple g-bg-purple-opacity-0_1 g-bg-purple--hover g-color-white--hover rounded-circle">
+									<i class="icon-real-estate-066 u-line-icon-pro"></i>
+								</span>
+							</div>
+							<div class="media-body align-self-center">
+								<h3 class="g-font-size-18 g-font-weight-700 g-color-purple mb-0">企业</h3>
+							</div>
+							<div class="align-self-center">
+								<a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover g-ml-10 pull-right" href="#">${article.title}</a>
+							</div>
+						</div>
+		              </h3>
+		
+		              <div class="g-mb-30 g-height-100">
+		                <p>${article.description.raw()}</p>
+		              </div>
+
+		            </div>
+		        </article>
+            </div>
+            #{/list}
+        </div>
+    </div>
+</section>

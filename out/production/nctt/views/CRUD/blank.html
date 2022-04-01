@@ -1,0 +1,27 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.blank.title', type.modelName) /}
+
+<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+	<div class="g-pa-20">
+            <div class="media">
+              <div class="d-flex align-self-center">
+                <h1 class="g-font-weight-300 g-font-size-28 g-color-black mb-0">&{'crud.blank.title', type.modelName}</h1>
+              </div>
+
+            </div>
+
+            <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+    <div class="objectForm">
+    #{form action:@create(), enctype:'multipart/form-data'}
+        #{crud.form /}
+        <p class="crudButtons">
+            <input type="submit" name="_save" value="&{'crud.save', type.modelName}" />
+            <input type="submit" name="_saveAndContinue" value="&{'crud.saveAndContinue', type.modelName}" />
+            <input type="submit" name="_saveAndAddAnother" value="&{'crud.saveAndAddAnother', type.modelName}" />
+        </p>
+    #{/form}
+    </div>
+    </div>
+
+</div>

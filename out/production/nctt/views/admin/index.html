@@ -1,0 +1,157 @@
+#{extends 'CRUD/layout.html' /} #{set title:messages.get('crud.title')
+/}
+
+
+<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+	<div class="g-pa-20">
+		<div class="g-pa-20">
+			<!-- Metrics 1 -->
+			<h2 class="h4 text-center g-font-weight-300 g-mb-20">
+				新闻管理 <span class="g-color-primary g-ml-5">#01</span>
+			</h2>
+			<div class="row g-mb-35">
+				<div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+					<!-- Panel -->
+					<div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+						<div class="card-block g-font-weight-300 g-pa-20">
+							<div class="media">
+								<div class="d-flex g-mr-15">
+									<div
+										class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-lightblue-v3 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+										<i class="hs-admin-briefcase g-absolute-centered"></i>
+									</div>
+								</div>
+
+								<div class="media-body align-self-center">
+									<div class="d-flex align-items-center g-mb-5">
+										<span class="g-font-size-24 g-line-height-1 g-color-black">中心</span>
+
+									</div>
+
+									<h6
+										class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">中心新闻</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Panel -->
+				</div>
+
+				<div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+					<!-- Panel -->
+					<div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+						<div class="card-block g-font-weight-300 g-pa-20">
+							<div class="media">
+								<div class="d-flex g-mr-15">
+									<div
+										class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-teal-v2 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+										<i class="hs-admin-check-box g-absolute-centered"></i>
+									</div>
+								</div>
+
+								<div class="media-body align-self-center">
+									<div class="d-flex align-items-center g-mb-5">
+										<span class="g-font-size-24 g-line-height-1 g-color-black">中科率先</span>
+
+									</div>
+
+									<h6
+										class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">中科率先新闻</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Panel -->
+				</div>
+
+				<div class="col-sm-6 col-lg-6 col-xl-3 g-mb-30">
+					<!-- Panel -->
+					<div class="card h-100 g-brd-gray-light-v7 g-rounded-3">
+						<div class="card-block g-font-weight-300 g-pa-20">
+							<div class="media">
+								<div class="d-flex g-mr-15">
+									<div
+										class="u-header-dropdown-icon-v1 g-pos-rel g-width-60 g-height-60 g-bg-darkblue-v2 g-font-size-18 g-font-size-24--md g-color-white rounded-circle">
+										<i class="hs-admin-wallet g-absolute-centered"></i>
+									</div>
+								</div>
+
+								<div class="media-body align-self-center">
+									<div class="d-flex align-items-center g-mb-5">
+										<span class="g-font-size-24 g-line-height-1 g-color-black">智汇工场</span>
+
+									</div>
+
+									<h6
+										class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">中科智汇工场新闻</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Panel -->
+				</div>
+
+
+			</div>
+			<!-- Metrics 1 -->
+
+			<!-- Metrics 2 -->
+			<h2 class="h4 text-center g-font-weight-300 g-mb-20">
+				案例管理 <span class="g-color-primary g-ml-5">#02</span>
+			</h2>
+			<div class="row g-mb-35 text-center u-icons-demo">
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+					<span class="u-icon-v1 g-mb-10"> <i class="hs-admin-agenda"></i>
+					</span> <input
+						class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value"
+						type="text" readonly="readonly" value="政府案例" />
+				</div>
+				
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+					<span class="u-icon-v1 g-mb-10"> <i class="hs-admin-agenda"></i>
+					</span> <input
+						class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value"
+						type="text" readonly="readonly" value="研究所案例" />
+				</div>
+				
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2 u-icons-demo__item">
+					<span class="u-icon-v1 g-mb-10"> <i class="hs-admin-agenda"></i>
+					</span> <input
+						class="js-selecter js-icons-demo-item__value text-truncate u-icons-demo-item__value"
+						type="text" readonly="readonly" value="企业案例" />
+				</div>
+
+
+
+
+			</div>
+			<!-- End Metrics 2 -->
+		</div>
+	</div>
+
+	<!-- <div id="crudIndex">
+
+    <h2>&{'crud.index.title'}</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>&{'crud.index.objectType'}</th>
+                <th width="20%">&{'crud.index.action'}</th>
+            </tr>
+        </thead>
+        <tbody>
+#{crud.types}
+            <tr>
+                <td>
+                    <a href="${type.listAction}">&{type.name}</a>
+                </td>
+                <td class="crudNew" >
+                    <a href="${type.blankAction}">&{'crud.index.add', type}</a>
+                </td>
+            </tr>
+#{/crud.types}
+        </tbody>
+    </table>
+
+</div> -->

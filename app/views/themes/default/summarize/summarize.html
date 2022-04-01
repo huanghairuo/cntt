@@ -1,0 +1,144 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<style>
+    
+
+    .timeline_content_left {
+        font-size: 16px;
+        color: #111;
+    }
+
+    .timeline_left {
+        text-align: right;
+        padding-right: 17%;
+    }
+
+
+    .timeline_right {
+        text-align: left;
+        padding-left: 17%
+    }
+
+    .honor_content:hover {
+        background-color: #4876FF;
+        color: #fff;
+    }
+</style>
+<!-- Start 中心概况 -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="background-image: url(@{'/public/images/central/zhongxin.jpg'});height: 400px">
+    <!-- <div class="container u-bg-overlay__inner text-center g-pt-120 g-pb-70">
+        <div class="g-mb-100">
+            <h1
+                    class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">
+                中心概况</h1>
+            <span
+                    class="d-block lead g-color-white banner-text">中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是科技部认定的首批国家技术转移示范机构。北京中心在业务上接受中科院北京分院的直接领导，是中国科学院开展科技成果转化、技术转移工作的重要平台.</span>
+        </div>
+    </div> -->
+</section>
+<!-- End 中心概况 -->
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-10">
+    	<div class="row">
+        	<div class="col-3">
+        	<article class="u-shadow-v21 u-shadow-v21--hover g-bg-white text-center g-overflow-hidden g-rounded-4 g-pos-rel g-z-index-2 g-cursor-pointer g-transition-0_3"  style="max-width: 230px; margin-top: -95px;">
+	              <!-- Article Header -->
+	              <header class="g-bg-blue-lineargradient-v2 g-pos-rel g-px-20 g-py-35">
+	                <strong class="d-block g-color-white g-font-size-24 g-line-height-0_7">
+	                    关于我们
+	                </strong>
+	              </header>
+	              <!-- End Article Header -->
+	
+	              <!-- Article Content -->
+	              <div class="g-pt-0">
+                <!-- Nav tabs -->
+                <ul class="nav flex-column u-nav-v2-1  menu_tob left_tob" role="tablist"
+                    data-target="nav-2-1-primary-ver" data-tabs-mobile-type="slide-up-down"
+                    data-btn-classes="btn btn-md btn-block u-btn-outline-primary g-mb-20">
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none g-font-size-16 active" href="@{Application.summarize('summarize')}" role="tab">公司简介</a>
+                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link g-py-10 g-brd-none g-font-size-16" href="@{Application.summarize('teams')}" role="tab">现任领导</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link g-py-10 g-brd-none g-font-size-16" href="@{Application.summarize('organization')}" role="tab">组织架构</a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none g-font-size-16 " href="@{Application.summarize('honor')}" role="tab">荣誉资质</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link g-py-10 g-brd-none g-font-size-16" href="@{Application.summarize('roadmap')}" role="tab">历史沿革</a>
+                    </li>
+                </ul>
+                <!-- End Nav tabs -->
+                </div>
+                </article>
+            </div>
+
+		<div class="col-9">
+        <!-- Tab panes -->
+        <div id="nav-5-1-primary-hor-justified" class="tab-content g-pt-20">
+                
+                <ul class="d-flex u-list-inline mb-4">
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2" href="#">主页</a>
+				              <i class="g-color-gray-light-v2 fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-mr-15">
+				              <a class="g-color-gray-light-v2 " href="#">中心概况</a>
+				              <i class="g-color-gray-light-v2  fa fa-angle-right"></i>
+				            </li>
+				            <li class="list-inline-item g-color-gray-light-v2">
+				              <span>公司简介</span>
+				            </li>
+				        </ul>
+                <div class="text-left g-mb-50">
+                    <h2 class="h4 g-color-primary">公司简介</h2>
+                </div>
+            <div class="g-font-size-16 g-line-height-2 g-mb-30">
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    为切实贯彻创新驱动发展战略，加速推进中关村科学城和全国科技创新核心区建设，
+                    深入落实《“十三五”时期中国科学院与北京市人民政府合作推进全国科技创新中心建设行动计划》协议精神，
+                    在中国科学院和北京市政府的指导下， 中国科学院北京分院（现中国科学院科技创新发展中心）及海淀区政府本着资源共享、互惠互利、立足长远、合作共赢的原则，
+                    围绕体制机制创新、科技成果转化、创新人才培养等方面，
+                    共同打造涵盖科技成果大数据研究院、科技金融、知识产权、产业孵化加速、国际合作等服务的科技创新综合体——中科智汇工场。
+                </p>
+                <p class="science_introduce" style="margin-bottom: 0px">
+                    一、战略定位
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    中科智汇工场立足4项功能定位，推动科技成果转移转化工作：
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    中科院领航企业培育地
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    中科院先进技术成果展示地
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    中科院技术转移转化人才培养及科普教育基地
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    中科院科技服务及产业对外辐射地
+                </p>
+                <p class="science_introduce" style="margin-bottom: 0px">
+                    二、服务体系
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    根据科技成果转化生命周期，中科智汇工场打造包含“早期概念验证、中期孵化加速、后期产业推广”的三级孵化体系，同时整合中科院及社会优质资源，
+                    打造CAS概念验证计划、垂直产业加速器、中科营商大脑、中科学院、技术经理合伙人计划、中科院研发仪器开放共享平台、产业技术研究院、科技金融等科技服务项目。
+                </p>
+                <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                    中科智汇工场作为中科院开展科技成果转移转化工作的科技创新综合体，聚焦服务高新技术产业发展、地方经济转型升级，致力于打造科技成果转移转化新高地。
+                </p>
+            </div>
+</div>
+</div>            
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->

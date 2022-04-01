@@ -1,0 +1,35 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.show.title', type.modelName) /}
+
+<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+	<div class="g-pa-20">
+            <div class="media">
+              <div class="d-flex align-self-center">
+                <h1 class="g-font-weight-700 g-font-size-28 g-color-black mb-0">&{'crud.show.title', type.modelName}</h1>
+              </div>
+              <div class="media-body align-self-center text-right">
+                #{form @delete(object._key())}
+			       
+			        	<button class="btn btn-md btn-xl--md u-btn-darkred g-width-160--md g-font-size-12 g-font-size-default--md g-mb-10" type="submit">&{'crud.delete', type.modelName}</button>
+			       
+			    #{/form}
+			  </div>
+
+            </div>
+
+            <hr class="d-flex g-brd-gray-light-v7 g-my-30">
+
+    <div class="objectForm">
+    #{form action:@save(object._key()), enctype:'multipart/form-data'}
+        #{crud.form /}
+        <p class="crudButtons">
+        	<button class="btn btn-md btn-xl--md u-btn-secondary g-width-160--md g-font-size-12 g-font-size-default--md g-mb-10" type="submit" name="_save" >&{'crud.save', type.modelName}</button>
+            <button class="btn btn-md btn-xl--md u-btn-outline-gray-dark-v6 g-font-size-12 g-font-size-default--md g-mr-10 g-mb-10" type="submit" name="_saveAndContinue" >&{'crud.saveAndContinue', type.modelName}</button>
+        </p>
+    #{/form}
+    </div>
+
+    
+    </div>
+
+</div>

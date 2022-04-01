@@ -1,0 +1,13 @@
+#{form action:@list().remove('page'), method:'GET'}
+    #{if _fields}
+        <input type="hidden" class="form-control g-font-size-default g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-20 g-pl-20 g-pr-50 g-py-10" name="searchFields" value="${_fields.toString().substring(1, _fields.toString().length()-1).replace(',', '')}" />
+    #{/if}
+    <div class="input-group g-pos-rel g-width-320--md">
+    <input id="datatableSearch1"  type="text" class="form-control g-font-size-default g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-rounded-20 g-pl-20 g-pr-50 g-py-10" name="search" value="${params.search?.escape()?.raw()}" /> <button class="btn g-pos-abs g-top-0 g-right-0 g-z-index-2 g-width-60 h-100 g-bg-transparent g-font-size-16 g-color-primary g-color-secondary--hover rounded-0" type="submit">
+                      <i class="hs-admin-search g-absolute-centered"></i>
+                    </button>
+                    </div>
+    #{if _caller.params.search}
+        (<a href="@{list()}">&{'crud.list.totalSize', _caller.totalCount}</a>)
+    #{/if}
+#{/form}

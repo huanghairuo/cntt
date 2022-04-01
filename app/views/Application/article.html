@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+#{set title: article.title /}
+
+<!-- 内容 -->
+    <section id="content" class="g-bg-secondary">
+        <div class="container g-py-100">
+        	<div class="justify-content-center align-content-end flex-wrap">
+                <h2 class="g-color-gray-dark-v1 g-font-weight-600 g-mb-30">${article.title}</h2>
+            </div>
+            <p class="info">文章来源：${article.source}&nbsp;&nbsp;|&nbsp;&nbsp;发布时间：${article.create_at.format('yyyy-MM-dd')}&nbsp;&nbsp;</p>
+            <hr>
+            ${article.description.raw()}
+        </div>
+    </section>
+    <!-- End 内容 -->

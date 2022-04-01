@@ -1,0 +1,13 @@
+# This file defines all module routes (Higher priority routes first)
+#
+# import these routes in the main app as :
+# *     /                       module:articles
+#
+# ~~~~
+GET     /                 AdminController.index
+
+GET     /customMenu                 AdminController.customMenu
+
+
+GET     /?                      Module.index
+

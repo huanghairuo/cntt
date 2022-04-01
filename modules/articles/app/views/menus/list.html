@@ -1,0 +1,34 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.list.title', type.name) /}
+
+<div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+	<div class="g-pa-20">
+            <div class="media g-mb-30">
+              <div class="d-flex align-self-center">
+                <h1 class="g-font-weight-700 g-font-size-28 g-color-black mb-0">&{'crud.list.title', type.name}</h1>
+              </div>
+
+              <div class="media-body align-self-center text-right">
+                <a class="btn btn-xl u-btn-primary g-width-160--md g-font-size-default g-ml-10" href="@{blank()}">&{'crud.add', type.modelName}</a>
+              </div>
+            </div>
+
+            <div class="g-bg-white g-rounded-8 g-pa-20">
+            
+	            <div class="media-md align-items-center g-mb-30">
+	
+	              <div class="media d-md-flex align-items-center ml-auto">
+	                <div class="d-flex g-ml-15">
+	                  
+	                    #{crud.search /}
+	                  
+	                </div>
+	              </div>
+	            </div>
+	            
+	            #{crud.table fields:['menu_name','menu_type','menu_url','menu_order','menu_icon'] /}
+	            
+	            #{crud.pagination /}
+            </div>
+     </div>
+</div>

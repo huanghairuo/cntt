@@ -1,0 +1,295 @@
+#{extends 'themes/default/layout.html' /}
+#{set title:'Home' /}
+<style>
+    .u-nav-v2-1 .nav-link.active, .u-nav-v2-1 .cbp-filter-item-active .nav-link {
+        background-color: #266CF9;
+        color: #fff;
+    }
+
+    .menu_tob {
+        position: absolute;
+        width: 80%;
+        top: 80px
+    }
+</style>
+<!-- Start 中心概况 -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="background-image: url(@{'/public/images/central/zhongxin.jpg'});height: 450px">
+    <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">
+        <div class="g-mb-100">
+            <h1
+                    class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">
+                中心概况</h1>
+            <span
+                    class="d-block lead g-color-white banner-text">中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是科技部认定的首批国家技术转移示范机构。北京中心在业务上接受中科院北京分院的直接领导，是中国科学院开展科技成果转化、技术转移工作的重要平台.</span>
+        </div>
+    </div>
+</section>
+<!-- End 中心概况 -->
+<!-- 内容 -->
+<section id="content" class="g-bg-secondary">
+    <div class="container g-py-80">
+        <div class="row">
+            <div class="col-3">
+                <!-- Nav tabs -->
+                <ul class="nav flex-column u-nav-v2-1 u-nav-rounded-5 menu_tob left_tob" role="tablist"
+                    data-target="nav-1-1-primary-ver" data-tabs-mobile-type="slide-up-down"
+                    data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-primary g-mb-20">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#summarize" role="tab">公司简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#teams" role="tab">现任领导</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#organization" role="tab">组织架构</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#honor" role="tab">荣誉资质</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#roadmap" role="tab">发展历程</a>
+                    </li>
+                </ul>
+                <!-- End Nav tabs -->
+            </div>
+
+            <div class="col-9">
+                <!-- Tab panes -->
+                <div id="nav-1-1-primary-ver" class="tab-content">
+                    <div class="tab-pane fade show active" id="summarize" role="tabpanel">
+                        <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                            <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                                中国科学院北京国家技术转移中心（以下简称“北京中心”）成立于2003年3月28日,是经原国家经贸委、教育部和中
+                                国科学院批准成立，由中国科学院与北京市人民政府共建的专门从事技术转移、科技成果转化的高科技服务机构，也是
+                                科技部认定的首批国家技术转移示范机构。北京中心在业务上接受中科院北京分院的直接领导，是中国科学院开展科技
+                                成果转化、技术转移工作的重要平台。
+                            </p>
+                            <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                                北京中心秉承“创新技术转移模式，服务区域经济发展”的理念，不断推动科技成果转移转化，助力区域产业升级；
+                                不断探索机制体制创新，为创新创业营造良好的氛围；不断完善技术转移服务平台，为技术供需双方提供全方位的科技服务。
+                            </p>
+                            <p class="science_introduce" style="text-indent:2em;margin-bottom: 0px">
+                                北京中心自成立以来致力于整合院内外科技资源，并不断加强与地方政府、科研院所和企业的合作，形成了以重大
+                                项目推进平台、首都科技条件平台、科技金融平台、国际技术转移平台、京外科技合作平台、知识产权平台及技术转移
+                                产业联盟为主体的“6+1”技术转移工作体系。在大众创业、万众创新的新常态下，北京中心不断进行市场化探索，形成
+                                了以“科技智库、科技金融、科技培训、科技孵化”四轮驱动的市场化业务体系。
+                            </p>
+                        </div>
+                        <!--                            <img src="images/central/ZX.jpg">-->
+                    </div>
+
+                    <div class="tab-pane fade" id="teams" role="tabpanel">
+                        <section class="container g-pb-70">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="u-shadow-v3 g-bg-white g-brd-around g-brd-gray-light-v4 g-line-height-2 g-pa-20 g-mb-30"
+                                         role="alert" style="height: 210px !important;">
+                                        <img class="w-100" src="@{'/public/images/img/teams/hsy.jpg'}" alt="Image Description"
+                                             style="width: 35% !important;float: left;margin-right: 20px;">
+                                        <div>
+                                            <strong style="font-size: 20px;color: #333;">黄韶勇</strong>
+                                            <span>主任</span>
+                                        </div>
+                                        <p>黄韶勇，现任中国科学院北京国家技术转移中心主任，负责中心及公司工作整体协调，监督参控股公司发展。</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="u-shadow-v3 g-bg-white g-brd-around g-brd-gray-light-v4 g-line-height-2 g-pa-20 g-mb-30"
+                                         role="alert" style="height: 210px !important;">
+                                        <img class="w-100" src="@{'/public/images/img/teams/zn.jpg'}" alt="Image Description"
+                                             style="width: 35% !important;float: left;margin-right: 20px;">
+                                        <div>
+                                            <strong style="font-size: 20px;color: #333;">赵 楠</strong>
+                                            <span>常务副主任</span>
+                                        </div>
+                                        <p>赵楠，现任中国科学院北京国家技术转移中心常务副主任，负责中心日常运营及管理工作。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12 g-mb-30">
+                                    <div class="u-shadow-v3 g-bg-white g-brd-around g-brd-gray-light-v4 g-line-height-2 g-pa-20 g-mb-30"
+                                         role="alert" style="height: 210px !important;">
+                                        <img class="w-100" src="@{'/public/images/img/teams/ccn.jpg'}" alt="Image Description"
+                                             style="width: 35% !important;float: left;margin-right: 20px;">
+                                        <div>
+                                            <strong style="font-size: 20px;color: #333;">崔常男</strong>
+                                            <span>副主任</span>
+                                        </div>
+                                        <p style="cursor:pointer;" title="崔常男，现任中国科学院北京国家技术转移中心副主任，分管市场化工作。民进中央专委会委员、民进北京市委青年专委会主任、民进海淀区委委员、民进海淀区委青年专委会主任。第十届海淀区政协委员、第八届海淀区青联常委。">
+                                            崔常男，现任中国科学院北京国家技术转移中心副主任，分管市场化工作。民进中央专委会委员、民进北京市委青年专委会主任、民进海淀区委委员...</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 g-mb-30">
+                                    <div class="u-shadow-v3 g-bg-white g-brd-around g-brd-gray-light-v4 g-line-height-2 g-pa-20 g-mb-30"
+                                         role="alert" style="height: 210px !important;">
+                                        <img class="w-100" src="@{'/public/images/img/teams/yzf.jpg'}" alt="Image Description"
+                                             style="width: 35% !important;float: left;margin-right: 20px;">
+                                        <div>
+                                            <strong style="font-size: 20px;color: #333;">姚作芳</strong>
+                                            <span>副主任</span>
+                                        </div>
+                                        <p>姚作芳，现任中国科学院北京国家技术转移中心副主任，负责中心综合行政管理等工作。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="tab-pane fade" id="organization" role="tabpanel">
+                        <img src="@{'/public/images/central/organization.png'}">
+                    </div>
+                    <div class="tab-pane fade" id="honor" role="tabpanel">
+                        <p class="text_part">2008年被科技部认定为“首批国家技术转移示范机构”；</p>
+                        <p class="text_part">2008年被评为“中关村20周年创新发展突出贡献单位”；</p>
+                        <p class="text_part">2009年获中科院院地合作局“院地合作集体奖”；</p>
+                        <p class="text_part">2009年获科技部“中国产学研合作创新与促进奖”；</p>
+                        <p class="text_part">2010年获北京市科委“首都科技条件平台研发试验服务基地优秀管理奖”；</p>
+                        <p class="text_part">2011年获科技部火炬中心首批“创新驿站”试点单位；</p>
+                        <p class="text_part">2011年获科技部“中国技术市场协会金桥奖先进集体奖”；</p>
+                        <p class="text_part">2011年获第十三届北京技术市场协会金桥奖“集体一等奖”；</p>
+                        <p class="text_part">2012年获中科院北京分院、中关村科技园区管理委员会“特别贡献奖”；</p>
+                        <p class="text_part">2013年获科技部“中国技术市场协会金桥奖”先进集体奖和先进个人；</p>
+                        <p class="text_part">2013年获中科院北京分院、中关村科技园区管理委员会技术转移工作组织奖“特别贡献奖”；</p>
+                        <p class="text_part">2014年1月在中科院院级非法人单元考评获中介型机构第一名；</p>
+                        <p class="text_part">2014年3月获中科院北京分院、中关村科技园区管理委员会技术转移工作组织奖“特别贡献奖”；</p>
+                        <p class="text_part">2014年4月被科技部中国技术市场协会评为“2013年度科技服务诚信机构”；</p>
+                        <p class="text_part">2014年9月获科技部“中国技术市场协会金桥奖”先进集体奖；</p>
+                        <p class="text_part">2015年4月被科技部中国技术市场协会评为“2014年度科技服务诚信机构”。</p>
+                    </div>
+
+                    <div class="tab-pane fade container" id="roadmap" role="tabpanel" style="position: relative">
+                        <div class="row">
+                            <div style="text-align: center;" class="col-12"><img src="@{'/public/images/central/timer_shaft.png'}" alt=""/></div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-5 offset-2" style="position: absolute;top: 76%;">
+                                <img src="@{'/public/images/central/2003_1.png'}"/>
+                            </div>
+                            <div class="offset-md-5 offset-1" style="position: absolute;top: 76%;left: 3%;">
+                                <img src="@{'/public/images/central/2003_2.png'}"/>
+                            </div>
+                            <div class="offset-md-7 offset-6" style="position: absolute;top: 80%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 77%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2003 </strong></span>
+                                </div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 79%;">
+                                <span>经原国家经贸委、教育部和中 科院批准成立</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-6 offset-6" style="position: absolute;top: 67%;">
+                                <img src="@{'/public/images/central/else.png'}"/>
+                            </div>
+                            <div class="offset-md-5 offset-3" style="position: absolute;top: 69%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-2" style="position: absolute;top: 66%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2005 </strong></span>
+                                </div>
+                            </div>
+                            <div class="col-3" style="position: absolute;top: 68%;width: 34%;padding-left: 0px;padding-right: 0px;text-align: right">
+                                <span>北京分院成立，成为北京分院下属机构</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-5 offset-2" style="position: absolute;top: 57%;">
+                                <img src="@{'/public/images/central/else.png'}"/>
+                            </div>
+                            <div class="offset-md-7 offset-6" style="position: absolute;top: 59%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 56%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2008 </strong></span>
+                                </div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 58%;">
+                                <span>科技部<span style="color: #ff0000;">首批</span>国家级技术转移中心之一</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-6 offset-6" style="position: absolute;top: 46%;">
+                                <img src="@{'/public/images/central/2011.png'}"/>
+                            </div>
+                            <div class="offset-md-5 offset-3" style="position: absolute;top: 49%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-2" style="position: absolute;top: 46%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2011</strong></span>
+                                </div>
+                            </div>
+                            <div class="col-3" style="position: absolute;top: 48%;width: 34%;padding-left: 0px;padding-right: 0px;text-align: right">
+                                <span>海淀区政府、中关村管委会、北京市科委和北京分院<span style="color: #ff0000;">四方共建</span  >北京中心</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-5 offset-2" style="position: absolute;top: 36%;">
+                                <img src="@{'/public/images/central/2013.png'}"/>
+                            </div>
+                            <div class="offset-md-7 offset-6" style="position: absolute;top: 40%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 36%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2013 </strong></span>
+                                </div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 39%;">
+                                <span><span style="color: #ff0000;">成立十周年，</span>累计起完善的技术转移工作体系，并开始市场化探索</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-6 offset-6" style="position: absolute;top: 27%;">
+                                <img src="@{'/public/images/central/else.png'}"/>
+                            </div>
+                            <div class="offset-md-5 offset-3" style="position: absolute;top: 29%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-2" style="position: absolute;top: 26%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2016</strong></span>
+                                </div>
+                            </div>
+                            <div class="col-3" style="position: absolute;top: 28%;width: 34%;padding-left: 0px;padding-right: 0px;text-align: right">
+                                <span>中关村管委会与北京分院签署共建协议</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-5 offset-2" style="position: absolute;top: 16%;">
+                                <img src="@{'/public/images/central/2017.png'}"/>
+                            </div>
+                            <div class="offset-md-7 offset-6" style="position: absolute;top: 20%;">
+                                <div style="width: 68px; height: 1px; border-top: solid #dcdddf 2px;"></div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 16%;">
+                                <div style="float: left; width: 3px; height: 25px; background: #0072ff;"> </div>
+                                <div style="padding-left: 12px;line-height: 25px;text-align: left">
+                                    <span style="font-size: 18pt;"><strong>2017 </strong></span>
+                                </div>
+                            </div>
+                            <div class="offset-md-9 offset-9" style="position: absolute;top: 19%;">
+                                <span>深化改革</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tab panes -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End 内容 -->

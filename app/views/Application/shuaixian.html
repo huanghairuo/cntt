@@ -1,0 +1,333 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<!-- Start 科技服务Banner -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="display: flex;justify-content: center;align-items: center;overflow: hidden;margin-top: 80px;">
+<!--    <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">-->
+<!--        <div class="g-mb-100">-->
+<!--            <h1-->
+<!--                    class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50&#45;&#45;md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">-->
+<!--            </h1>-->
+<!--            <span class="d-block lead g-color-white" style="font-size: 18px;font-weight: 400;">-->
+<!--					</span>-->
+<!--        </div>-->
+<!--    </div>-->
+    <img src="@{'/public/images/central/shuaixian_banner.jpg'}" style="width: 160%;">
+</section>
+<!-- End 科技服务Banner -->
+
+
+<!-- Video Intro -->
+<section
+        class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall">
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-white-opacity-0_3--after"
+         style="height: 140%; background-image: url(@{'/public/images/img/bg/bg1.jpg'});"> 
+    </div>
+    <div class="container g-pt-100 g-pb-20">
+        <div class="row justify-content-between">
+            <div class="col-md-7 g-mb-30">
+                <div id="ms-gallery-1" class="ms-gallery-template">
+                    <!--							&lt;!&ndash; masterslider &ndash;&gt;-->
+                    <div id="masterslider" class="master-slider ms-skin-black-2 round-skin">
+                        <div class="ms-slide"><img src="@{'/public/images/central/shuaixian1.jpg'}" alt="阜新市科技局党组书记杨春一行调研中科衡水中心"
+                                                   data-src="@{'/public/images/central/shuaixian1.jpg'}"/>
+                            <div class="ms-info" style="font-size: 16px;">阜新市科技局党组书记杨春一行调研中科衡水中心</div>
+                            <a href="@{article('59')}" target="_blank"></a>
+                        </div>
+                        <div class="ms-slide"><img src="@{'/public/images/central/shuai2.jpg'}" alt="京津冀“双协同”创新发展大会在衡水成功举行"
+                                                   data-src="@{'/public/images/central/shuai2.jpg'}"/>
+                            <div class="ms-info" style="font-size: 16px;">京津冀“双协同”创新发展大会在衡水成功举行</div>
+                            <a href="@{article('48')}" target="_blank"></a>
+                        </div>
+                        <div class="ms-slide"><img src="@{'/public/images/central/shuai3.jpg'}" alt="中科衡水中心调研衡水鼎坤果蔬种植有限公司、衡水景芝园灵芝专业合作社、衡水康晟园林绿化有限公司"
+                                                   data-src="@{'/public/images/central/shuai3.jpg'}"/>
+                            <div class="ms-info" style="font-size: 16px;">中科衡水中心调研衡水鼎坤果蔬种植有限公司、衡水景芝园灵芝专业合作社、衡水康晟园林绿化有限公司</div>
+                            <a href="@{article('50')}" target="_blank"></a>
+                        </div>
+                    </div>
+                    <!--	&lt;!&ndash; end of masterslider &ndash;&gt;-->
+                </div>
+
+            </div>
+            <div class="col-md-5 g-mb-30">
+                <div class="d-sm-flex text-center g-brd-bottom g-brd-primary">
+                    <div class="align-self-center" style="float: left;width: 80%;">
+                        <ul class="nav u-nav-v2-1 u-nav-primary" role="tablist"
+                            data-tabs-mobile-type="accordion"
+                            data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-primary"
+                            style="height: 38.4px">
+                            <li class="reveal">
+                                <a class="active reveal_a" data-toggle="tab"
+                                   href="#nav-2-1-accordion-default-hor-left-icons--1"
+                                   role="tab" style="text-decoration: none">
+                                    <p class="xin1 top_p">
+                                         <img src="@{'/public/images/central/yaowen1.svg'}" class="top_img"/>
+                                        <span style="display:block;float:right">新闻动态</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Nav tabs -->
+                    </div>
+                    <div class="align-self-center ml-auto" style="line-height: 38.4px;"><a href="@{Application.shuaixianList()}"
+                                                              target="_blank">更多&gt;&gt;</a></div>
+                </div>
+                <!-- Tab panes -->
+                <div id="nav-2-1-accordion-default-hor-left-icons" class="tab-content g-overflow-hidden">
+                    <div id="nav-2-1-accordion-default-hor-left-icons--1" class="tab-pane fade show active">
+                        <ul class="g-list-style-square g-pt-15">
+                            #{list items: shuaixianList, as:'article' }
+                            <li class="news_li"><a
+                                    class="justify-content-between u-link-v5 g-line-height-2 g-color-gray-dark-v2 g-parent"
+                                    href="@{article(article.id)}" target="_blank"
+                                    title="${article?.title}">${article?.title}<span
+                                    class="d-inline-block float-right g-font-size-12 g-min-width-40 g-color-primary g-brd-gray-light-v3 text-center rounded g-px-10 g-py-3">${article?.update_at.format('yyyy-MM-dd')}</span>
+                            </a></li>
+                            #{/list}
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Tab panes -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Video Intro -->
+<!-- Section 1 -->
+<section class="g-py-100">
+    <div class="row justify-content-center text-center g-mb-50" style="margin: 0px">
+        <div class="col-lg-9">
+            <h2 class="h2 g-color-primary g-font-weight-600 mb-2">科技服务</h2>
+            <!--					<div class="d-inline-block g-width-30 g-height-2 g-bg-primary mb-2"> </div>-->
+        </div>
+    </div>
+    <div class="container" id="kjfw">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">产业集聚培育</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce">服务于院所成果的市场化和产业化，助力院所成果价值实现。
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/chanye1.png'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 1 -->
+<!-- Section 2 -->
+<section class="g-bg-blue g-color-white g-py-100 science_serve" id="cgzt">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden g-mb-50--md g-mb-0--md"><img
+                    src="@{'/public/images/central/xuqiu1.png'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">企业需求赋能</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white">
+                        挖掘企业需求，以院所项目作为供给端资源，对接企业合作。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section 2 -->
+<!--		<p> </p>-->
+<!-- Section 3 -->
+<section class="g-py-100 science_serve" id="zhjh">
+    <!--			<div class="row justify-content-center text-center g-mb-50"> </div>-->
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">创新环境提升</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce">组织院所、项目、人才开展科技培训、“中科+”系列沙龙、院士大讲堂等各种创新活动</p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/tisheng1.png'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 3 -->
+<!--		<p> </p>-->
+<!-- Section 4 -->
+<section class="g-bg-blue g-color-white g-py-100 science_serve" id="kjjr">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden g-mb-50--md g-mb-0--md"><img
+                    src="@{'/public/images/central/tiaojian1.png'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">科技条件平台</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white">服务院所仪器设备，开放共享。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section 5 -->
+<section class="g-color-white g-py-100 science_serve" id="zkxy">
+    <!--			<div class="row justify-content-center text-center g-mb-50"> </div>-->
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">科技创新服务</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce">政策咨询服务、项目申报服务、创新评价服务、成果鉴定服务、知识产权服务、产品规划服务、竞品对比服务、成长评估服务</p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/chuangxin1.png'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 5 -->
+<!--		<p> </p>-->
+<!-- Section 6 -->
+<section class="g-bg-blue g-color-white g-py-100 science_serve" id="kcdsj">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden g-mb-50--md g-mb-0--md"><img
+                    src="@{'/public/images/central/big_data.png'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">科技载体运营</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white" style="text-indent:2em;">
+                        将科技载体运营作为院所项目市场化和落地的基础空间。目前，中科率先已经在衡水、潍坊、常州和深圳等地建立了科技服务中心和创新园作为科技载体进行运营。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section 6 -->
+<!-- 关于我们 -->
+
+<section class="container g-pt-100 g-pb-50">
+    <div class="row justify-content-center g-mb-60">
+        <div class="col-lg-7">
+            <!-- Heading -->
+            <div class="text-center">
+                <h2 class="h3 g-color-black text-uppercase mb-2">关于中科率先</h2>
+            </div>
+            <!-- End Heading -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="g-font-size-16 g-line-height-2 g-mb-30">
+            <p style="text-indent:2em;">
+                中科率先(北京)高新技术研究院有限公司是中国科学院北京国家技术转移中心的市场化业务主体，
+                是与各级政府、企业、院校等各类机构开展合作的执行单位;其承担着服务中国科学院各院所科技成果转化、促进地方产业发展、
+                推动企业转型升级等重要使命;目前已在京津冀、珠三角、长三角、中西部等区域形成了众多合作平台。
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- END 关于我们 -->
+
+<!-- 合作伙伴 -->
+
+<section class="g-bg-gray-light-v5 g-pt-100 g-pb-50">
+    <div class="row justify-content-center" style="margin: 0px">
+        <div class="col-lg-7">
+            <!-- Heading -->
+            <div class="text-center">
+                <h2 class="h3 g-color-black text-uppercase mb-2">合作伙伴</h2>
+            </div>
+            <!-- End Heading -->
+        </div>
+    </div>
+    <div class="container g-py-70">
+        <div class="g-overflow-hidden">
+            <div class="row text-center mx-0 g-ml-minus-1 g-mb-minus-1">
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/chuangye.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/shuangchuang.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/vast.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/xinxigu.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/yihua.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/yinlong.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/zhongke.jpg'}" alt="Image Description">
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-30 g-px-15"
+                         style="border: 0px !important;">
+                        <img class="img-fluid g-width-200 g-opacity-0_8--hover g-transition-0_2"
+                             src="@{'/public/images/central/jiaomei.png'}" alt="Image Description">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END 合作伙伴 -->
+<script src="@{'/public/images/vendor/jquery/jquery-3.2.1.min.js'}"></script>
+<script>
+    function skip(){
+        var ih = location.href.split("=")[1];
+        const target = document.getElementById(ih);
+        target.scrollIntoView();
+    }
+    $(document).ready(function () {
+        skip();
+    });
+
+</script>
+

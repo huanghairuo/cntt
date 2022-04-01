@@ -1,0 +1,122 @@
+p {
+	color: #888888 !important;
+}
+
+.u-heading-v3-1 .g-brd-primary {
+	border-bottom-width: 3px;
+}
+
+.light-theme .nav-link {
+	color: #fff !important;
+}
+
+.light-theme .hs-sub-menu .nav-link {
+	color: #333 !important;
+}
+
+
+.light-theme .hs-sub-menu a:hover {
+	color: #fff !important;
+}
+
+.news_li{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news_li a {
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.g-bg-secondary-dark-v1 {
+	background-color: #f0f2f8;
+}
+
+
+#newslist .g-bg-primary--hover:hover {
+  background-image: url('../images/img/news_hover.png') !important;
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+.g-color-white--hover:hover p{
+	color: #fff !important;
+  }
+
+@media (min-width: 576px) {
+	.g-mr-minus-100--sm {
+		margin-right: -7.14286rem !important;
+	}
+	
+	.g-ml-100--sm {
+		margin-left: 7.14286rem !important;
+	}
+	
+	.g-ml-minus-100--sm {
+		margin-left: -7.14286rem !important;
+	}
+}
+
+.g-bg-blue-lineargradient-v2 {
+	background: linear-gradient(270deg, #0082FF 0%, #0059CB 100%);
+}
+.g-bg-blue-opacity-0_7 {
+	background-color:#122C65 !important;
+}
+
+.g-brd-top2--hover:hover {
+	border-left-width:0px !important;
+	border-right-width:0px !important;
+	border-bottom-width:0px !important;
+	border-top-width: 2px !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: 700 !important;
+}
+
+[class*="u-nav-v5"].u-nav-primary .nav-link.active {
+	border-bottom-width: 2px !important;
+}
+
+.g-color-red,.g-brd-red {
+	color: #FF4545 !important;
+}
+
+.g-bg-red-opacity-0_1 {
+    background-color: rgba(255, 69, 69, 0.1) !important;
+}
+
+.g-bg-red--hover:hover {
+    background-color: #FF4545 !important;
+}
+
+.g-color-blue,.g-brd-blue {
+	color: #0C77FF !important;
+}
+
+.g-bg-blue-opacity-0_1 {
+    background-color: rgba(96, 85, 255, 0.1) !important;
+}
+
+.g-bg-blue--hover:hover {
+    background-color: #0C77FF !important;
+}
+
+.g-color-purple,.g-brd-purple {
+	color: #6055FF !important;
+	border-color: #6055FF !important;
+}
+
+.g-bg-purple-opacity-0_1 {
+    background-color:rgba(96, 85, 255, 0.1) !important;
+}
+
+.g-bg-purple--hover:hover {
+    background-color: #6055FF !important;
+}

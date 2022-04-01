@@ -1,0 +1,303 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<!-- Start 科技服务Banner -->
+<section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3"
+         style="display: flex;justify-content: center;align-items: center;overflow: hidden;margin-top: 80px;">
+<!--    <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">-->
+<!--        <div class="g-mb-100">-->
+<!--            <h1 class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50&#45;&#45;md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">-->
+<!--            </h1>-->
+<!--            <span class="d-block lead g-color-white" style="font-size: 18px;font-weight: 400;"></span>-->
+<!--        </div>-->
+<!--    </div>-->
+    <img src="@{'/public/images/central/genfire_banner.jpg'}" style="width: 160%;">
+</section>
+<!-- End 科技服务Banner -->
+
+
+<!-- Video Intro -->
+<section
+        class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall">
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-white-opacity-0_3--after"
+         style="height: 140%; background-image: url(@{'public/images/img/bg/bg1.jpg'});"> 
+    </div>
+    <div class="container g-pt-100 g-pb-20">
+        <div class="row justify-content-between">
+            <div class="col-md-7 g-mb-30">
+                <div id="ms-gallery-1" class="ms-gallery-template">
+                    <!--							&lt;!&ndash; masterslider &ndash;&gt;-->
+                    <div id="masterslider" class="master-slider ms-skin-black-2 round-skin">
+                        <div class="ms-slide"><img src="@{'/public/images/central/zhi1.jpg'}" alt="“智汇行动”——概念验证创新大赛-中科智能制造专场路演暨与北京银行签约仪式"
+                                                   data-src="@{'/public/images/central/zhi1.jpg'}"/>
+                            <div class="ms-info" style="font-size: 16px;">“智汇行动”——概念验证创新大赛-中科智能制造专场路演暨与北京银行签约仪式</div>
+                            <a href="@{article('52')}" target="_blank"></a>
+                        </div>
+                        <div class="ms-slide"><img src="@{'/public/images/central/zhi2.jpg'}" alt="政协副主席调研关键词：引领-辐射-发展壮大"
+                                                   data-src="@{'/public/images/central/zhi2.jpg'}"/>
+                            <div class="ms-info" style="font-size: 16px;">政协副主席调研关键词：引领-辐射-发展壮大</div>
+                            <a href="@{article('60')}" target="_blank"></a>
+                        </div>
+                        <div class="ms-slide"><img src="@{'/public/images/central/zhi3.jpg'}" alt="中科院微电子所党委副书记赵志刚到中科智汇工场考察"
+                                                   data-src="@{'/public/images/central/zhi3.jpg'}"/>
+                            <div class="ms-info" style="font-size: 16px;">中科院微电子所党委副书记赵志刚到中科智汇工场考察</div>
+                            <a href="@{article('61')}" target="_blank"></a>
+                        </div>
+                    </div>
+                    <!--	&lt;!&ndash; end of masterslider &ndash;&gt;-->
+                </div>
+
+            </div>
+            <div class="col-md-5 g-mb-30">
+                <div class="d-sm-flex text-center g-brd-bottom g-brd-primary">
+                    <div class="align-self-center" style="float: left;width: 80%;">
+                        <ul class="nav u-nav-v2-1 u-nav-primary" role="tablist"
+                            data-target="nav-2-1-accordion-default-hor-left-icons" data-tabs-mobile-type="accordion"
+                            data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-primary"
+                            style="height: 38.4px">
+                            <li class="yaowen reveal">
+                                <a class="active reveal_a" data-toggle="tab"
+                                   href="#nav-2-1-accordion-default-hor-left-icons--1"
+                                   role="tab" style="text-decoration: none">
+                                    <p class="xin1 top_p">
+                                        <img src="@{'/public/images/central/yaowen1.svg'}" class="top_img"/>
+                                        <span style="display:block;float:right">新闻动态</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-sm-flex align-self-center ml-auto" style="line-height: 38.4px"><a href="@{Application.genfireList()}"
+                                                              target="_blank">更多&gt;&gt;</a></div>
+                </div>
+                <!-- Tab panes -->
+                <div id="nav-2-1-accordion-default-hor-left-icons" class="tab-content g-overflow-hidden">
+                    <div id="nav-2-1-accordion-default-hor-left-icons--1" class="tab-pane fade show active">
+                        <ul class="g-list-style-square g-pt-15">
+                            #{list items: genfireList, as:'article' }
+                            <li class="news_li"><a
+                                    href="@{article(article.id)}"
+                                    class="justify-content-between u-link-v5 g-line-height-2 g-color-gray-dark-v2 g-parent"
+                                    target="_blank" title="${article?.title}">${article?.title}
+                                <span class="d-inline-block float-right g-font-size-12 g-min-width-40 g-color-primary g-brd-gray-light-v3 text-center rounded g-px-10 g-py-3">${article?.update_at.format('yyyy-MM-dd')}</span>
+                            </a></li>
+                            #{/list}
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Tab panes -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Video Intro -->
+<!-- Section 1 -->
+<section class="g-py-100" id="zhjh">
+    <div class="row justify-content-center text-center g-mb-50" style="margin: 0px">
+        <div class="col-lg-9">
+            <h2 class="h2 g-color-primary g-font-weight-600 mb-2">科技服务</h2>
+            <!--					<div class="d-inline-block g-width-30 g-height-2 g-bg-primary mb-2"> </div>-->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">概念验证中心</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce" style="text-indent:2em;">
+                        在海淀区和中国科学院科技创新发展中心支持下，“概念验证中心”计划通过提供种子资金、商业顾问、创业教育、产业资源对接、投融资服务、
+                        孵化空间等概念验证活动对早期项目进行筛选和扶持，支持和培育一批早期项目从实验室走向市场，发展壮大，成为战略新兴产业领域的独角兽企业。
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/img2.png'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 1 -->
+<!--		<p> </p>-->
+<!-- Section 2 -->
+<section class="g-bg-blue g-color-white g-py-100" id="kcdsj">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/shujupintai1.jpg'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">智汇营商大脑</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white" style="text-indent:2em;">
+                        通过大数据、人工智能、区块链等新一代信息技术手段，智能匹配各类科创要素，服务科技成果转移转化，支持科创中心建设。平台整合科研成果近1000项、专家资源近6000位、院所40余个、仪器设备数千台、企业信息1.5亿+。
+                        平台能够实现园区及区域企业发展趋势管理和运营，负面舆情监控，技术人才与当地产业的智能匹配，符合区域产业要求的招商工作。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section 2 -->
+<!--		<p> </p>-->
+<!-- Section 3 -->
+<section class="g-py-100" id="czfhq">
+    <!--			<div class="row justify-content-center text-center g-mb-50"> </div>-->
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">垂直产业加速器</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce" style="text-indent:2em;">
+                        与院所、企业等主体开展创新合作，深耕垂直领域，借助科研院所先进的专家资源、科技成果、仪器设备、人才储备等，充分利用中科智汇工场的空间优势、运营模式、服务体系，打造垂直领域的概念验证中心和产业加速成长平台。
+                        目前，中科智汇工场重点推进数字技术、装备制造、智能硬件等三个垂直产业领域加速器建设，带动相关产业生态快速发展。
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/chuizhijiashuqi1.jpg'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 3 -->
+<!--		<p> </p>-->
+<!-- Section 4 -->
+<section class="g-bg-blue g-color-white g-py-100" id="kjjr">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/financial.png'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">科技金融</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white" style="text-indent:2em;">
+                        形成“概念验证中心”、“智汇资本”、“产业投资”三级投资体系，凭借基金投资实现企业各阶段快速发展。
+                        其中“概念验证中心”全年将评审出8个优质项目，向每个项目提供不低于50万元的资金支持，用于加速项目产业化。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section 4 -->
+<!--		<p> </p>-->
+<!-- Section 5 -->
+<section class="g-py-100" id="cgzt">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">中科院科技成果展厅</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce" style="text-indent:2em;">
+                        作为中科院在京常设展厅、前沿技术展示中心、科普实践基地，为企业搭建项目展示窗口和发布平台。目前展厅按航空航天、智能制造、深海探测、医学健康、生态能源、农业发展8个展区，汇聚超100项中科院前沿科技项目。
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/zkzt.jpg'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 5 -->
+<!--		<p> </p>-->
+<!-- Section 6 -->
+<section class="g-bg-blue g-color-white g-pt-100">
+    <div class="container" id="kjfw">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/zkbg.jpg'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">中科智汇工场办公空间运营</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white" style="text-indent:2em;">
+                        中科智汇工场位于北京市海淀区西三旗建材城中路27号N1，包含2万平米高端办公区，1300平科技成果展厅，以及员工餐厅、健身步道等休闲生活配套设施，为创新创业团队构建花园式办公环境。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section 6 -->
+<!--		<p> </p>-->
+<!-- Section 7 -->
+<section class="g-py-100" id="zkxy">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center g-mb-50--md g-mb-0--md">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <p><span class="science_title">中科学院</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce" style="text-indent:2em;">
+                        将前沿管理思想与行业实践深度创新融合，建设继续教育体系，助力企业人才培养。同时，通过技术经理人培养和认定，培育壮大技术经理人、科技评估师和创新工程师队伍，打造一批金牌技术经理人。
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/img2.png'}" alt="" style="width: 100%;"/></div>
+        </div>
+    </div>
+</section>
+<!-- End Section 7 -->
+<!--		<p> </p>-->
+<!-- Section 8 -->
+<section class="g-bg-blue g-color-white g-py-100" id="cyyjy">
+    <div class="container">
+        <div class="row" style="margin: 0px">
+            <div class="col-6 align-self-center text-center g-overflow-hidden"><img
+                    src="@{'/public/images/central/img2.png'}" alt="" style="width: 100%;"/></div>
+            <div class="col-6 align-self-center">
+                <div class="u-heading-v2-3--bottom g-brd-white g-mb-30">
+                    <p><span class="science_title_white">产业研究院</span></p>
+                </div>
+                <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                    <p class="science_introduce_white" style="text-indent:2em;">
+                        与行业龙头企业共建产业研究院，将产业资源和中科院科技成果、人才有机结合，优势互补，助力行业龙头企业突破技术瓶颈，搭建项目成果到产业应用的绿色通道。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section 8 -->
+<!-- 关于我们 -->
+<section class="container g-pt-100 g-pb-50">
+    <div class="row justify-content-center g-mb-60" style="margin: 0px">
+        <div class="col-lg-7">
+            <!-- Heading -->
+            <div class="text-center">
+                <h2 class="h3 g-color-black text-uppercase mb-2">关于中科智汇工场</h2>
+            </div>
+            <!-- End Heading -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="g-font-size-16 g-line-height-2 g-mb-30">
+            <p style="text-indent:2em;">
+                中科智汇工场，是落实《“十三五”时期中国科学院与北京市人民政府合作推进全国科技创新中心建设行动计划》协议精神，由中国科学院北京分院与北京市海淀区政府合作共建；
+                依托中国科学院科创资源和项目资源优势，聚焦和支持科创中心建设，服务高新技术产业，探索政策引导与市场化运营相结合的发展之路；围绕体制机制创新、科技成果转化、科技普及、创新人才培养等方面，
+                打造涵盖概念验证、垂直产业孵化加速、产业技术研究院、科技成果大数据平台、科技金融、知识产权等内容和产品，是中国科学院开展成果转移转化的科技创新综合体，科技成果转移转化服务与解决方案提供方。
+            </p>
+        </div>
+    </div>
+</section>
+<script src="@{'/public/images/vendor/jquery/jquery-3.2.1.min.js'}"></script>
+<script>
+    function skip(){
+        var ih = location.href.split("=")[1];
+        const target = document.getElementById(ih);
+        target.scrollIntoView();
+    }
+    $(document).ready(function () {
+        skip();
+    });
+
+</script>

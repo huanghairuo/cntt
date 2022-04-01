@@ -1,0 +1,8 @@
+#{field 'object.' +     _name}
+    <label class="g-mb-10" for="${field.id}">
+        &{_name}
+    </label>
+    <div class="g-pos-rel #{ifError field.name}u-has-error-v3#{/ifError}">
+	    <textarea id="${field.id}" rows="10" class="js-text-editor form-control form-control-md g-resize-none g-line-height-1_6 g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-pa-20 ${field.errorClass}" name="${field.name}">${params[field.name]?.escape()?.raw() ?: field.error?.message == 'validation.required' ? '' : _value?.escape()?.raw()}</textarea>
+    </div>
+#{/field}

@@ -1,0 +1,26 @@
+.light-theme .nav-link {
+	color: #fff !important;
+}
+
+.light-theme .hs-sub-menu .nav-link {
+	color: #333 !important;
+}
+
+
+.light-theme .hs-sub-menu a:hover {
+	color: #fff !important;
+}
+
+.news_li{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news_li a {
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
